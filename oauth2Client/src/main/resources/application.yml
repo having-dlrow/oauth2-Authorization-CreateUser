@@ -1,0 +1,43 @@
+restclient-url: http://127.0.0.1:8081
+
+server:
+  port: 8082
+
+spring:
+  application:
+    name: Oauth2Client
+  thymeleaf:
+    cache: false
+
+  security:
+    oauth2:
+      # Oauth2-Client
+      client:
+        provider:
+          springOAuth2:
+            issuer-uri: http://localhost:9000
+            # (optional)
+            jwk-set-uri: http://localhost:9000/oauth2/jwks
+            token-uri: http://localhost:9000/oauth2/token
+            user-info-uri: http://localhost:9000/userinfo
+
+        registration:
+          springOAuth2:
+            # (required)
+            authorization-grant-type: authorization_code
+            # (required)
+            client-id: youtube-lecture-oauth2
+            client-name: b9b14387-25d0-46c8-8406-2c11deff05f0
+            # (required)
+            client-secret: secret
+            redirect-uri: http://127.0.0.1:8080/login/oauth2/code/youtube-lecture-oauth2  # JdbcClient
+            # (required)
+            scope: openid,profile
+            # (optional)
+            client-authentication-method: client_secret_basic
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG

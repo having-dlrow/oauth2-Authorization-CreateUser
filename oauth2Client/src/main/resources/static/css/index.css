@@ -1,0 +1,90 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #1e90ff;
+    margin-right: 30px;
+    font-size: 1.2em; /* 폰트 크기 증가 */
+    padding-bottom: 5px; /* 아래 여백 추가 */
+    border-bottom: 2px solid transparent; /* 기본 투명한 선 */
+    transition: border-bottom 0.3s ease;
+}
+
+a:hover {
+    border-bottom: 2px solid #1e90ff; /* 호버 시 아래 선 표시 */
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    color: #28a745;
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 1.3em;
+    color: #555;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 15px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
