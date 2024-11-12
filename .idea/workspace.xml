@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bebcf9d6-a3ae-4c5b-b518-77d4948e6d62" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/authorities.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/consent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/createUser.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/login.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/users.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -24,6 +20,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/AuthorizationServer">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/GatewayServer">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/ResourceServer">
@@ -48,23 +47,20 @@
         <task path="$PROJECT_DIR$/oauth2Client">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/GatewayServer">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="oauth2Client" type="f1a62948:ProjectNode" />
+                <item name="GatewayServer" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="oauth2Client" type="f1a62948:ProjectNode" />
+                <item name="GatewayServer" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="oauth2Client" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -96,55 +92,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.docker-compose.yml.mysql: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ResourceServer [:com.example.jdbcclient.ResourceServerApplication.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RestClient [:com.example.restclient.RestClientApplication.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.jdbcClient [:com.example.jdbcclient.JdbcClientApplication.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.oauth2Client [clean].executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.authority | Token.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.authority | getAllAuthorities.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.role | getAllRoles.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.user | #1.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.user | createUser.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.user | getAllAuthoritiesUsers.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.user | getAllUsers.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.user | getAllUsersAuthorities.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.user | getAllUsersRowMapper.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.user | getAllUsersTest.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.user | getAllUsersTestRowMapper.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.user | getUser (1).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.user | getUser.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.user | updateUser#1.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.user | updateUser#2.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AuthorizationServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.JdbcClientApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Oauth2ClientApplication (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Oauth2ClientApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.RestClientApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ysyoo/Documents/Github/ha-ving/SpringBootSpringAuthorizationServer/ResourceServer&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.28965518&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.docker-compose.yml.mysql: Compose Deployment.executor": "Run",
+    "Gradle.ResourceServer [:com.example.jdbcclient.ResourceServerApplication.main()].executor": "Run",
+    "Gradle.RestClient [:com.example.restclient.RestClientApplication.main()].executor": "Run",
+    "Gradle.jdbcClient [:com.example.jdbcclient.JdbcClientApplication.main()].executor": "Run",
+    "Gradle.oauth2Client [clean].executor": "Run",
+    "HTTP Request.authority | Token.executor": "Run",
+    "HTTP Request.authority | getAllAuthorities.executor": "Run",
+    "HTTP Request.role | getAllRoles.executor": "Run",
+    "HTTP Request.user | #1.executor": "Run",
+    "HTTP Request.user | createUser.executor": "Run",
+    "HTTP Request.user | getAllAuthoritiesUsers.executor": "Run",
+    "HTTP Request.user | getAllUsers.executor": "Run",
+    "HTTP Request.user | getAllUsersAuthorities.executor": "Run",
+    "HTTP Request.user | getAllUsersRowMapper.executor": "Run",
+    "HTTP Request.user | getAllUsersTest.executor": "Run",
+    "HTTP Request.user | getAllUsersTestRowMapper.executor": "Run",
+    "HTTP Request.user | getUser (1).executor": "Run",
+    "HTTP Request.user | getUser.executor": "Run",
+    "HTTP Request.user | updateUser#1.executor": "Run",
+    "HTTP Request.user | updateUser#2.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.AuthorizationServerApplication.executor": "Run",
+    "Spring Boot.JdbcClientApplication.executor": "Run",
+    "Spring Boot.Oauth2ClientApplication (1).executor": "Run",
+    "Spring Boot.Oauth2ClientApplication.executor": "Run",
+    "Spring Boot.RestClientApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ysyoo/Documents/Github/ha-ving/SpringBootSpringAuthorizationServer/GatewayServer",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.28965518",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.jdbcclient.service" />
@@ -215,6 +211,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ResourceServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="GatewayServer.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.jdbcclient.ResourceServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ResourceServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ResourceServer.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.jdbcclient.ResourceServerApplication" />
@@ -262,7 +265,9 @@
       <option name="presentableId" value="Default" />
       <updated>1731305950177</updated>
       <workItem from="1731305951408" duration="21236000" />
-      <workItem from="1731332144781" duration="27996000" />
+      <workItem from="1731332144781" duration="28626000" />
+      <workItem from="1731398218613" duration="1859000" />
+      <workItem from="1731400129336" duration="4577000" />
     </task>
     <servers />
   </component>

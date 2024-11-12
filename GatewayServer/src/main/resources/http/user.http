@@ -1,0 +1,69 @@
+@domain = http://localhost:8091
+# postman
+@authToken = eyJraWQiOiJiODU5NjM0Ny00ZTYyLTRjNjktYjJiMS1hNjExODE5NzNjOTkiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImF1ZCI6InlvdXR1YmUtbGVjdHVyZS1vYXV0aDIiLCJuYmYiOjE3MzEzODg3OTQsInNjb3BlIjpbIm9wZW5pZCIsInByb2ZpbGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwIiwiZXhwIjoxNzMxMzg5MDk0LCJpYXQiOjE3MzEzODg3OTQsImp0aSI6IjJjMWIyNzI0LTJiNzktNGRjMy04MTMyLWZkOGJmMzdkMDk1NyJ9.RXYTaNSKGTEhS-qz-RFQYEqphGvmeLo4NqSp-x9-sNA2Vg8ARb4eQaCtowFePP2Jm4HM7lRCGVPe0Z579lqxWizfKjThpqhBRvzvY6RYhwrFb5SEHGlR_m96dLlAYVcOHP94jdmropFBcNjyX4zJoKIup7b9DbZQXRAjpiaCI_KXGs9wOs2LO1aaWm3--sqFTkqPfXbEyRHrw3Zs9YMwmlv1qIDThEKAxX3yV5ogG4A3xZv18fvjUaOhnMQXcS92ZFAFuDy_WPrDqXdcCkFQNu7qN2rafIrpd9dflJA04ttcWODJWKPRTuQ2vSQtZhRzhDonvwGOtsYnnx2cde5wlA
+
+
+### getAllUsers
+GET {{domain}}/user
+Content-Type: application/json
+
+### getAllUsersRowMapper
+GET {{domain}}/user_rowmapper
+Content-Type: application/json
+
+### getAllUsersTest
+GET {{domain}}/user_test
+Content-Type: application/json
+
+### getAllUsersTestRowMapper
+GET {{domain}}/user_test_rowmapper
+Content-Type: application/json
+
+### getAllUsersAuthorities
+GET {{domain}}/users_authorities
+Content-Type: application/json
+
+### getAllAuthoritiesUsers
+GET {{domain}}/authorities_users
+Content-Type: application/json
+
+### findByUserName
+GET {{domain}}/user/user1
+Content-Type: application/json
+
+### createUser
+POST {{domain}}/user
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+  "username": "user992",
+  "password": "password",
+  "enabled": true,
+  "authority": ["ROLE_ADMIN", "ROLE_USER"]
+}
+
+### getUser
+GET {{domain}}/user/user999
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+### updateUser
+PUT {{domain}}/user
+Content-Type: application/json
+
+{
+  "username": "user999",
+  "password": "password",
+  "enabled": false
+}
+
+### updateUser
+DELETE {{domain}}/user/user999
+Content-Type: application/json
+
+{
+  "username": "user999",
+  "password": "password",
+  "enabled": true
+}

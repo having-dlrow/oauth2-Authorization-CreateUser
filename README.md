@@ -85,7 +85,49 @@ CREATE TABLE oauth2_authorization (
 ![createUsers.png](resource/createUsers.png)
 ![authorities.png](resource/authorities.png)
 
+### DB
+
 
 
 ### REF
-- https://github.com/wdkeyser02/SpringBootSpringAuthorizationServer
+### Chapter01 Authorization Server Custom User
+- [Spring Boot 3.2.0 - Spring Authorization Server - Create, Update & Delete Users](https://www.youtube.com/watch?v=h609GfjOdfI)
+[🦊 spring_boot_client_04_cleanup_database](https://github.com/wdkeyser02/SpringBootSpringAuthorizationServer/tree/spring_boot_client_04_cleanup_database)
+
+### Chapter02 Authorization Server & Gateway / SpringCloudGatewayAngularTutorial
+- [Spring Boot 3 - Spring Cloud Gateway - Angular App - Spring Authorization Server OAuth2](https://www.youtube.com/watch?v=lGVjQxghx9w)
+[🦊 authorization_server ](https://github.com/wdkeyser02/SpringCloudGatewayAngularTutorial/tree/authorization_server)
+- [Spring Boot 3 - Spring Cloud Gateway - Angular App](https://www.youtube.com/watch?v=NYNIoegNggg)
+[🦊 gateway ](https://github.com/wdkeyser02/SpringCloudGatewayAngularTutorial/tree/gateway)
+
+### Chapter03 JWK & 2Factor / SpringSecurityCloudGatewayAngularTutorial
+[🦊 authorization_server]
+- [Spring Authorization Server - Spring Cloud Gateway - Angular App Setup - Login & Logout](https://www.youtube.com/watch?v=wddvIxi-cCc)
+[🦊 resource_server](https://github.com/wdkeyser02/SpringSecurityCloudGatewayAngularTutorial/tree/resource_servers)
+- [Spring Authorization Server - Spring Cloud Gateway - Angular App - Spring Boot 3.1.3](https://www.youtube.com/watch?v=0AhK6o39Cvc)
+[🦊 cloud_gateway](https://github.com/wdkeyser02/SpringSecurityCloudGatewayAngularTutorial/tree/cloud_gateway)
+- [Spring Authorization Server - Spring Cloud Gateway - Angular App - Custom Login & Consent Screen](https://www.youtube.com/watch?v=zp0Ee3Gu0aA)
+[🦊 custom_consent](https://github.com/wdkeyser02/SpringSecurityCloudGatewayAngularTutorial/tree/custom_consent)
+- [Spring Authorization Server - Spring Cloud Gateway - Angular App - Setup JdbcUserDetailsManager](https://www.youtube.com/watch?v=HLPr7srzILI)
+[🦊 jdbc_user_details_manager](https://github.com/wdkeyser02/SpringSecurityCloudGatewayAngularTutorial/tree/jdbc_user_details_manager)
+- [Spring Authorization Server Spring Cloud Gateway - Angular App Setup JdbcRegisteredClientRepository](https://www.youtube.com/watch?v=ROlvCxH-q04)
+[🦊 jdbc_registered_client_repository](https://github.com/wdkeyser02/SpringSecurityCloudGatewayAngularTutorial/tree/jdbc_registered_client_repository)
+- [Spring Authorization Server - Spring Cloud Gateway - Angular App Setup - Enable PKCE](https://www.youtube.com/watch?v=qcj-z7HjqbI)
+[🦊 jdbc_registered_client_repository_pkce](https://github.com/wdkeyser02/SpringSecurityCloudGatewayAngularTutorial/tree/jdbc_registered_client_repository_pkce)
+- [Spring Authorization Server - Spring Cloud Gateway - Angular App Setup - Enable JDBC Session](https://www.youtube.com/watch?v=KB3P8Y6XeKY)
+[🦊 jdbc_session](https://github.com/wdkeyser02/SpringSecurityCloudGatewayAngularTutorial/tree/jdbc_session)
+- [Spring Authorization - Server Spring Cloud Gateway - Save Authorization & Consents to a Database](https://www.youtube.com/watch?v=rcNBKzQ2VYk)
+[🦊 jdbc_authorization](https://github.com/wdkeyser02/SpringSecurityCloudGatewayAngularTutorial/tree/jdbc_authorization)
+- [Spring Authorization Server - Spring Cloud Gateway - Angular App Setup - Keys Config](https://www.youtube.com/watch?v=tcIDW-9bM58)
+[🦊 keys](https://github.com/wdkeyser02/SpringSecurityCloudGatewayAngularTutorial/tree/keys)
+- [Spring Authorization Server - Spring Cloud Gateway - Angular App Setup - Rotating Keys (1)](https://www.youtube.com/watch?v=UPjIR4xFIkA)
+[🦊 rotate_keys](https://github.com/wdkeyser02/SpringSecurityCloudGatewayAngularTutorial/tree/rotate_keys)
+- [Spring Authorization Server - Spring Cloud Gateway - Angular App Setup - Rotating Keys (2)](https://www.youtube.com/watch?v=YlibRJj3KuU)
+[🦊 jdbc_rotate_keys](https://github.com/wdkeyser02/SpringSecurityCloudGatewayAngularTutorial/tree/jdbc_rotate_keys)
+- [Spring Authorization Server - Spring Cloud Gateway - Angular App Setup - Rotating Keys (3)](https://www.youtube.com/watch?v=2l9-flGO-5A)
+[🦊 jdbc_rotating_keys_encryptor](https://github.com/wdkeyser02/SpringSecurityCloudGatewayAngularTutorial/tree/jdbc_rotating_keys_encryptor)
+[🦊 multi_factor_authentication]
+- [Spring Authorization Server - Custom User Details](https://www.youtube.com/watch?v=Z1y16K04joA)
+[🦊 custom_user_details_service](https://github.com/wdkeyser02/SpringSecurityCloudGatewayAngularTutorial/tree/custom_user_details_service)
+[Spring Authorization Server - Angular App - Multi-Factor authentication - Google Authenticator](https://www.youtube.com/watch?v=RQzbow3ErZs)
+[🦊 multi_factor_authenticator_part_02](https://github.com/wdkeyser02/SpringSecurityCloudGatewayAngularTutorial/tree/multi_factor_authenticator_part_02)
