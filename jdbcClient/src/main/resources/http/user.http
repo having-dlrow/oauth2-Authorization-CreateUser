@@ -1,0 +1,63 @@
+@domain = http://localhost:8080
+
+### getAllUsers
+GET {{domain}}/user
+Content-Type: application/json
+
+### getAllUsersRowMapper
+GET {{domain}}/user_rowmapper
+Content-Type: application/json
+
+### getAllUsersTest
+GET {{domain}}/user_test
+Content-Type: application/json
+
+### getAllUsersTestRowMapper
+GET {{domain}}/user_test_rowmapper
+Content-Type: application/json
+
+### getAllUsersAuthorities
+GET {{domain}}/users_authorities
+Content-Type: application/json
+
+### getAllAuthoritiesUsers
+GET {{domain}}/authorities_users
+Content-Type: application/json
+
+### findByUserName
+GET {{domain}}/user/user1
+Content-Type: application/json
+
+### createUser
+POST {{domain}}/user
+Content-Type: application/json
+
+{
+  "username": "user999",
+  "password": "password",
+  "enabled": true
+}
+
+### getUser
+GET {{domain}}/user/user999
+Content-Type: application/json
+
+### updateUser
+PUT {{domain}}/user
+Content-Type: application/json
+
+{
+  "username": "user999",
+  "password": "password",
+  "enabled": false
+}
+
+### updateUser
+DELETE {{domain}}/user/user999
+Content-Type: application/json
+
+{
+  "username": "user999",
+  "password": "password",
+  "enabled": true
+}

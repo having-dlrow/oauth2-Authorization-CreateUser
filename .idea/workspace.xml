@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bebcf9d6-a3ae-4c5b-b518-77d4948e6d62" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ResourceServer/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/ResourceServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/controller/AuthorityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/AuthoritiesResultExtractor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/UserByUsernameExtractor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/UserExtrator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/UserResultExtractor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/UserRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/UserTestRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/Authorities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/Authority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/UserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/User_Authority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/service/AuthorityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/service/CleanupDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/service/UserService_archieve.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/resources/http/authority.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/resources/http/role.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/resources/http/user.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/resources/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/test/java/com/example/jdbcclient/JdbcClientApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/config/OAuth2Properties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2Client/src/main/resources/templates/templates.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2Client/src/main/resources/templates/userbyusername.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth2Client/src/main/resources/templates/userform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestClient/src/main/java/com/example/restclient/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestClient/src/main/java/com/example/restclient/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestClient/src/main/java/com/example/restclient/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestClient/src/main/java/com/example/restclient/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth2Client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/Oauth2ClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/Oauth2ClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/config/OAuth2RestClientInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/config/OAuth2RestClientInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/config/RestClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/config/RestClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/service/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/service/UserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/resources/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/resources/static/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/resources/templates/authority.html" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/resources/templates/authority.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/resources/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/resources/templates/user.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/AuthorizationServer">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/ResourceServer">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/RestClient">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/RestClient/Oauth2Client">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/jdbcClient">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/oauth2Client">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/oauth2Client">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="oauth2Client" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="oauth2Client" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="oauth2Client" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2ogzKb93ZVNVooCqYDh74X84JhC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.docker-compose.yml.mysql: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ResourceServer [:com.example.jdbcclient.ResourceServerApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RestClient [:com.example.restclient.RestClientApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.jdbcClient [:com.example.jdbcclient.JdbcClientApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.oauth2Client [clean].executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.authority | Token.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.authority | getAllAuthorities.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.role | getAllRoles.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.user | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.user | createUser.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.user | getAllAuthoritiesUsers.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.user | getAllUsers.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.user | getAllUsersAuthorities.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.user | getAllUsersRowMapper.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.user | getAllUsersTest.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.user | getAllUsersTestRowMapper.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.user | getUser (1).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.user | getUser.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.user | updateUser#1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.user | updateUser#2.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AuthorizationServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.JdbcClientApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Oauth2ClientApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Oauth2ClientApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.RestClientApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ysyoo/Documents/Github/ha-ving/SpringBootSpringAuthorizationServer/ResourceServer&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.28965518&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.jdbcclient.service" />
+      <recent name="com.example.oauth2client.service" />
+      <recent name="com.example.oauth2client.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ysyoo\Documents\Github\ha-ving\SpringBootSpringAuthorizationServer" />
+      <recent name="C:\Users\ysyoo\Documents\Github\ha-ving\SpringBootSpringAuthorizationServer\RestClient\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ysyoo\Documents\Github\ha-ving\SpringBootSpringAuthorizationServer\AuthorizationServer\src\main\resources\static\css" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.jdbcclient.service" />
+      <recent name="com.example.oauth2client.config" />
+      <recent name="com.example.oauth2client.model" />
+      <recent name="com.example.jdbcclient.model" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ResourceServerApplication">
+    <configuration name="authority | getAllAuthorities" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ResourceServer/src/main/resources/http/authority.http" requestIdentifier="getAllAuthorities" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="role | getAllRoles" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ResourceServer/src/main/resources/http/role.http" requestIdentifier="getAllRoles" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="user | createUser" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ResourceServer/src/main/resources/http/user.http" index="8" requestIdentifier="createUser" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="user | getUser" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ResourceServer/src/main/resources/http/user.http" index="9" requestIdentifier="getUser" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="AuthorizationServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="AuthorizationServer.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authorizationserver.AuthorizationServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="jdbcClient.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.jdbcclient.JdbcClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Oauth2ClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="oauth2Client.main~1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.oauth2client.Oauth2ClientApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.oauth2client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResourceServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ResourceServer.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.jdbcclient.ResourceServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="RestClient.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.restclient.RestClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Oauth2ClientApplication" />
+        <item itemvalue="HTTP Request.role | getAllRoles" />
+        <item itemvalue="HTTP Request.user | createUser" />
+        <item itemvalue="HTTP Request.user | getUser" />
+        <item itemvalue="HTTP Request.authority | getAllAuthorities" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bebcf9d6-a3ae-4c5b-b518-77d4948e6d62" name="Changes" comment="" />
+      <created>1731305950177</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731305950177</updated>
+      <workItem from="1731305951408" duration="21236000" />
+      <workItem from="1731332144781" duration="27090000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/controller/UserController.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

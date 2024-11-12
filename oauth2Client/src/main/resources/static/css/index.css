@@ -1,90 +1,180 @@
-/* style.css */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+/* 기본 스타일 */
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a {
+body {
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* 컨테이너 스타일 */
+.container {
+    max-width: 1200px;
+    min-height: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.text h1 {
+    color: #5a67d8;
+}
+
+.text h2 {
+    color: #4c51bf;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.text h3 {
+    color: #6a5acd;
+    margin-bottom: 20px;
+}
+
+.text h4 {
+    color: #ff7f50;
+}
+
+/* 네비게이션 바 */
+.navbar {
+    background: linear-gradient(45deg, #84fab0, #8fd3f4);
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item a {
+    color: #fff;
     text-decoration: none;
-    color: #1e90ff;
-    margin-right: 30px;
-    font-size: 1.2em; /* 폰트 크기 증가 */
-    padding-bottom: 5px; /* 아래 여백 추가 */
-    border-bottom: 2px solid transparent; /* 기본 투명한 선 */
-    transition: border-bottom 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+.nav-item a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* 버튼 스타일 */
+.logout-btn-x {
+    background-color: #ff6961;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.logout-btn-x:hover {
+    background-color: #ff4747;
+}
+
+/* 링크 스타일 */
+a {
+    color: #3182ce;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    border-bottom: 2px solid #1e90ff; /* 호버 시 아래 선 표시 */
+    color: #2b6cb0;
 }
 
-.navbar {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+/* 테이블 스타일 */
+.table, .authority-table {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
 }
 
-.container {
-    text-align: center;
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.container h1 {
-    color: #28a745;
-    font-size: 2.8em;
-    margin-bottom: 10px;
-}
-
-.container p {
-    font-size: 1.3em;
-    color: #555;
-}
-
-.login-container {
-    background-color: #fff;
-    padding: 50px;
-    border-radius: 15px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.login-container h2 {
-    margin-bottom: 25px;
-    color: #333;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-input {
-    padding: 15px;
-    margin: 12px 0;
-    border: 1px solid #ddd;
-    border-radius: 7px;
-    outline: none;
-}
-
-button {
-    padding: 15px;
-    background-color: #28a745;
-    border: none;
-    border-radius: 7px;
+.table thead,
+.authority-table thead {
+    background-color: #4c51bf;
     color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #218838;
+.table tbody tr:hover,
+.authority-table tbody tr:hover {
+    background-color: #f1f3f5;
+}
+
+.authority-table th,
+.authority-table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.authority-table tr:nth-child(even) {
+    background-color: #f0f4f8;
+}
+
+/* 카드 스타일 */
+.authority-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.authority-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.authority-card:hover {
+    transform: translateY(-10px);
+}
+
+.authority-card h3 {
+    color: #2b6cb0;
+    margin-bottom: 15px;
+}
+
+.authority-card p {
+    color: #4a5568;
+}
+
+/* 푸터 스타일 */
+.footer {
+    background-color: #4c51bf;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 40px;
 }

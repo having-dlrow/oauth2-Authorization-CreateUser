@@ -1,0 +1,8 @@
+{
+  "username": "user999",
+  "password": "{bcrypt}$2a$10$6wdcnqpWFnt5kkG4hbZWVOGljjbPexmyLSsm2LRACG8PEKZtDMz2m",
+  "enabled": true,
+  "authority": [
+    null
+  ]
+}

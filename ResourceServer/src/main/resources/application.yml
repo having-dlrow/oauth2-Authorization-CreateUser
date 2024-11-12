@@ -1,0 +1,39 @@
+server:
+  port: 8091
+
+spring:
+
+  application:
+    name: ResourceServer
+
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/msa_db}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${SPRING_DATASOURCE_USERNAME:mysqluser}
+    password: ${SPRING_DATASOURCE_PASSWORD:Pa55w0rd}
+
+  sql:
+    init:
+      mode: always
+
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9000 # AuthorizationServer
+  threads:
+    virtual:
+      enabled: true
+
+logging:
+  level:
+    root: debug
+    org:
+      springframework:
+        security: INFO
+
+clean:
+  database:
+    cron.expression: '0 */15 * * * *'
+    days: 0

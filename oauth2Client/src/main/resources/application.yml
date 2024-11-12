@@ -1,4 +1,5 @@
-restclient-url: http://127.0.0.1:8081
+#restclient-url: http://127.0.0.1:8081 # RestClient
+restclient-url: http://127.0.0.1:8091  # ResourceServer
 
 server:
   port: 8082
@@ -14,7 +15,7 @@ spring:
       # Oauth2-Client
       client:
         provider:
-          springOAuth2:
+          youtube-lecture-oauth2:
             issuer-uri: http://localhost:9000
             # (optional)
             jwk-set-uri: http://localhost:9000/oauth2/jwks
@@ -22,7 +23,8 @@ spring:
             user-info-uri: http://localhost:9000/userinfo
 
         registration:
-          springOAuth2:
+          # Provider ID must be specified for client registration
+          youtube-lecture-oauth2:
             # (required)
             authorization-grant-type: authorization_code
             # (required)
@@ -30,11 +32,18 @@ spring:
             client-name: b9b14387-25d0-46c8-8406-2c11deff05f0
             # (required)
             client-secret: secret
-            redirect-uri: http://127.0.0.1:8080/login/oauth2/code/youtube-lecture-oauth2  # JdbcClient
+            redirect-uri: http://127.0.0.1:8082/login/oauth2/code/youtube-lecture-oauth2  # JdbcClient
             # (required)
             scope: openid,profile
             # (optional)
             client-authentication-method: client_secret_basic
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true # HTML FORM (POST|GET)만 지원, DELETE 가능하려면 true 설정
+  threads:
+    virtual:
+      enabled: true
 
 logging:
   level:

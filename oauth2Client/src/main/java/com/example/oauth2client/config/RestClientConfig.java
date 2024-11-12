@@ -1,29 +1,26 @@
 package com.example.oauth2client.config;
 
 import com.example.oauth2client.service.UserClient;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.oauth2.client.OAuth2AuthorizedClientManager;
-import org.springframework.security.oauth2.client.OAuth2AuthorizedClientProvider;
 import org.springframework.security.oauth2.client.OAuth2AuthorizedClientProviderBuilder;
 import org.springframework.security.oauth2.client.registration.ClientRegistration;
 import org.springframework.security.oauth2.client.registration.ClientRegistrationRepository;
+import org.springframework.security.oauth2.client.registration.InMemoryClientRegistrationRepository;
 import org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager;
 import org.springframework.security.oauth2.client.web.OAuth2AuthorizedClientRepository;
-import org.springframework.security.oauth2.core.endpoint.OAuth2AuthorizationRequest;
 import org.springframework.web.client.RestClient;
 import org.springframework.web.client.support.RestClientAdapter;
 import org.springframework.web.service.invoker.HttpServiceProxyFactory;
 
 @Configuration
+@RequiredArgsConstructor
 public class RestClientConfig {
 
-    @Value("${spring.security.oauth2.client.registration.springOAuth2.client-id}")
-    String client_id;
-
-    @Value("${restclient-url}")
-    String restclient_url;
+    private final OAuth2Properties oAuth2Properties;
 
     @Bean
     public UserClient userClient(
@@ -31,10 +28,10 @@ public class RestClientConfig {
             ClientRegistrationRepository clientRegistrationRepository
     ) {
 
-        ClientRegistration clientRegistration = clientRegistrationRepository.findByRegistrationId(client_id);
+        ClientRegistration clientRegistration = clientRegistrationRepository.findByRegistrationId(oAuth2Properties.getClientId());
 
         RestClient restClient = RestClient.builder()
-                .baseUrl(restclient_url)
+                .baseUrl(oAuth2Properties.getRestClientUrl())
                 .requestInterceptor(
                         new OAuth2RestClientInterceptor(authorizedClientManager, clientRegistration)
                 )
@@ -48,7 +45,7 @@ public class RestClientConfig {
 
     @Bean
     public OAuth2AuthorizedClientManager authorizedClientManager(
-            ClientRegistrationRepository clientRegistrationRepository,
+            InMemoryClientRegistrationRepository clientRegistrationRepository,
             OAuth2AuthorizedClientRepository authorizedClientRepository
         ) {
         // manager
@@ -56,8 +53,9 @@ public class RestClientConfig {
         // manager.setProvider
         authorizedClientManager.setAuthorizedClientProvider(
                 OAuth2AuthorizedClientProviderBuilder.builder()
-                        .clientCredentials()
                         .authorizationCode()
+        //                .password() // deprecated
+                        .clientCredentials()
                         .refreshToken()
                         .build()
         );

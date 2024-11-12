@@ -1,4 +1,7 @@
 package com.example.jdbcclient.model;
 
-public class User {
+public record User(String username,
+                   String password,
+                   Boolean enabled) {
+
 }

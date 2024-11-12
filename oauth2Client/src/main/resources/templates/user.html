@@ -10,15 +10,39 @@
 </head>
 <body>
 <div>
-    <p><a href="/">Home</a> - <a href="/user">Users</a> - <a href="/authority">Authorities</a></p>
-    <h1>Spring Boot Tutorial</h1>
-    <h2>User</h2>
-    <div th:each="user: ${users}">
-        <h3>Username: <span th:text="${user.username}"></span></h3>
-        <p>Password: <span th:text="${user.password}"></span></p>
-        <p>Enabled: <span th:text="${user.enabled}"></span></p>
+    <!-- navbar -->
+    <div th:replace="~{templates :: navbar}"></div>
+
+    <!-- 메인 컨텐츠 -->
+    <div class="container mt-5">
+        <div class="text-center mb-4">
+            <h1 class="display-4">🌸 Spring Boot Tutorial 🌸</h1>
+            <h2 class="mt-4">User List</h2>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover authority-table">
+                <thead class="table-dark">
+                <tr>
+                    <th scope="col">Username</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">Enabled</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="user: ${users}">
+                    <td th:text="${user.username}"></td>
+                    <td th:text="${user.password}"></td>
+                    <td th:text="${user.enabled ? 'Yes' : 'No'}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <p>Willy De Keyser</p>
+
+    <!-- 푸터 -->
+    <div th:replace="~{templates :: footer}"></div>
+    <!-- Bootstrap JS 추가 (필수) -->
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
 </div>
 </body>
 </html>

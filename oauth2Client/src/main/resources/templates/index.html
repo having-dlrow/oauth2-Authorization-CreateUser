@@ -8,14 +8,13 @@
     <link rel="stylesheet" th:href="@{/css/index.css}">
 </head>
 <body>
-    <nav class="navbar">
-        <a href="home.html">Home</a>
-        <a href="users.html">Users</a>
-        <a href="authorities.html">Authorities</a>
-    </nav>
-    <div class="container">
-        <h3>Welcome to Spring Boot Tutorial</h3>
-        <h4>Hello, Yeonsoo </h4>
+    <div th:replace="~{templates :: navbar}"></div>
+    <div class="main container">
+        <h3>🌸 Welcome to Spring Boot Tutorial 🌸</h3>
+        <h4>Hello, Yeonsoo</h4>
+        <p th:text="${logout}"></p>
+        <p th:text="${loginUrl}">${loginUrl}</p>
     </div>
+    <div th:replace="~{templates :: footer}"></div>
 </body>
 </html>

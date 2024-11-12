@@ -1,0 +1,6 @@
+{
+  "timestamp": "2024-11-12T03:45:07.987+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "path": "/role"
+}

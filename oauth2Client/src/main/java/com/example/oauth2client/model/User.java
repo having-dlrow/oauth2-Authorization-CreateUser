@@ -1,7 +1,15 @@
 package com.example.oauth2client.model;
 
-public record User(String username,
-                   String password,
-                   Boolean enabled) {
+import java.util.List;
+
+import jakarta.validation.constraints.NotBlank;
+
+public record User(
+        @NotBlank(message = "Username can not be Empty!")
+        String username,
+        @NotBlank(message = "Password can not be Empty!")
+        String password,
+        Boolean enabled,
+        List<String> authority) {
 
 }

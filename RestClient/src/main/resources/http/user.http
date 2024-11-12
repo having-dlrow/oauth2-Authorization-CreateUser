@@ -1,0 +1,39 @@
+@domain = http://localhost:8081
+
+### getAllUsers
+GET {{domain}}/user
+Content-Type: application/json
+
+### createUser
+POST {{domain}}/user
+Content-Type: application/json
+
+{
+  "username": "user999",
+  "password": "password",
+  "enabled": true
+}
+
+### getUser
+GET {{domain}}/user/user999
+Content-Type: application/json
+
+### updateUser
+PUT {{domain}}/user
+Content-Type: application/json
+
+{
+  "username": "user999",
+  "password": "password",
+  "enabled": false
+}
+
+### updateUser
+DELETE {{domain}}/user/user999
+Content-Type: application/json
+
+{
+  "username": "user999",
+  "password": "password",
+  "enabled": true
+}

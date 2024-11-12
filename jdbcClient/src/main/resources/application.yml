@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+
+  application:
+    name: jdbcClient
+
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/msa_db}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${SPRING_DATASOURCE_USERNAME:mysqluser}
+    password: ${SPRING_DATASOURCE_PASSWORD:Pa55w0rd}
+
+  sql:
+    init:
+      mode: always
