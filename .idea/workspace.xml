@@ -5,70 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bebcf9d6-a3ae-4c5b-b518-77d4948e6d62" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ResourceServer/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/ResourceServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/controller/AuthorityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/controller/RoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/AuthoritiesResultExtractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/UserByUsernameExtractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/UserExtrator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/UserResultExtractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/UserRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/UserTestRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/Authorities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/Authority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/UserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/User_Authority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/service/AuthorityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/service/CleanupDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/service/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/service/UserService_archieve.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/resources/http/authority.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/resources/http/role.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/resources/http/user.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/resources/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/test/java/com/example/jdbcclient/JdbcClientApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/config/OAuth2Properties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/service/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth2Client/src/main/resources/templates/templates.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth2Client/src/main/resources/templates/userbyusername.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth2Client/src/main/resources/templates/userform.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestClient/src/main/java/com/example/restclient/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestClient/src/main/java/com/example/restclient/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestClient/src/main/java/com/example/restclient/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestClient/src/main/java/com/example/restclient/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth2Client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/Oauth2ClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/Oauth2ClientApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/config/OAuth2RestClientInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/config/OAuth2RestClientInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/config/RestClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/config/RestClientConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/service/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/service/UserClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/resources/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/resources/static/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/resources/templates/authority.html" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/resources/templates/authority.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/resources/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/resources/templates/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/authorities.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/consent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/createUser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/users.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -318,7 +262,7 @@
       <option name="presentableId" value="Default" />
       <updated>1731305950177</updated>
       <workItem from="1731305951408" duration="21236000" />
-      <workItem from="1731332144781" duration="27090000" />
+      <workItem from="1731332144781" duration="27996000" />
     </task>
     <servers />
   </component>

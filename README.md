@@ -77,3 +77,15 @@ CREATE TABLE oauth2_authorization (
     PRIMARY KEY (id)
 );
 ```
+
+![img.png](resource/img.png)
+![login.png](resource/login.png)
+![consent.png](resource/consent.png)
+![users.png](resource/users.png)
+![createUsers.png](resource/createUsers.png)
+![authorities.png](resource/authorities.png)
+
+
+
+### REF
+- https://github.com/wdkeyser02/SpringBootSpringAuthorizationServer
