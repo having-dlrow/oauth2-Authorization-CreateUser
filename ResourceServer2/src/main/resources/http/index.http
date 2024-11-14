@@ -1,0 +1,14 @@
+@domain = http://localhost:8092
+@gateway = http://localhost:8090
+# postman
+@authToken = eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxODIxOSwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTg1MTksImlhdCI6MTczMTQxODIxOSwianRpIjoiNmQ3Y2I4MGUtMTljYi00NmNjLTkxZTEtNDA3Mjk5YjRmNjAwIn0.SwQf-a_bmIH1IUxDLh-jSHEf3xOBa7kRSO8kBc1lnQNavFwHXtRk7KGFt3xCjgpyeAEVLX4xTRB0ahLG5oL6UMUwRcw2cXPT8ZwbhqHKnOv27DG064BnLVCNzU5-1mVYpNFF_oDUi46iF4lecngxbkZDRxn_VQnsekGNxnNMBQJK09udWqYPEWBYgpBOaPa1Mk_YkMGA7Ix38T25y05KslEp-qQMPIOnry3-TiLP6xJPwUtuFEIVD_2qygfu8GzGxOoXPKuWJ9F5vVx9RjzbVRYhkQQyxa42zUETxbMprObCQ8kk0x0cfmEZSz8wKB4TvtB1LHpUkBL_bhnwKT9Ivw
+
+### Redirect to ResourceServer
+GET {{domain}}/resourceserver02
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+### Gateway ResourceServer
+GET {{gateway}}/resource2/resourceserver02
+Content-Type: application/json
+Authorization: Bearer {{authToken}}

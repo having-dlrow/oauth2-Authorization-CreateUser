@@ -9,16 +9,22 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.oauth2.core.AuthorizationGrantType;
+import org.springframework.security.oauth2.core.ClientAuthenticationMethod;
+import org.springframework.security.oauth2.core.oidc.OidcScopes;
 import org.springframework.security.oauth2.server.authorization.JdbcOAuth2AuthorizationConsentService;
 import org.springframework.security.oauth2.server.authorization.JdbcOAuth2AuthorizationService;
 import org.springframework.security.oauth2.server.authorization.OAuth2AuthorizationConsentService;
 import org.springframework.security.oauth2.server.authorization.OAuth2AuthorizationService;
 import org.springframework.security.oauth2.server.authorization.client.JdbcRegisteredClientRepository;
+import org.springframework.security.oauth2.server.authorization.client.RegisteredClient;
 import org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository;
 import org.springframework.security.oauth2.server.authorization.config.annotation.web.configuration.OAuth2AuthorizationServerConfiguration;
 import org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer;
+import org.springframework.security.oauth2.server.authorization.settings.ClientSettings;
 import org.springframework.security.provisioning.JdbcUserDetailsManager;
 import org.springframework.security.provisioning.UserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
@@ -26,6 +32,8 @@ import org.springframework.security.web.authentication.LoginUrlAuthenticationEnt
 import org.springframework.security.web.util.matcher.MediaTypeRequestMatcher;
 
 import javax.sql.DataSource;
+import java.time.Instant;
+import java.util.UUID;
 
 @Configuration
 @EnableWebSecurity
@@ -57,17 +65,24 @@ public class SecurityConfig {
 
     @Bean
     @Order(2)
-    SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http)
-            throws Exception {
+    SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests((authorize) -> authorize
-                        .requestMatchers("/css/**", "/favicon.ico", "/error", "/login").permitAll()
+                        .requestMatchers("/error", "/login").permitAll()
                         .anyRequest().authenticated()
                 )
-//                .formLogin(Customizer.withDefaults());
+                // .formLogin(Customizer.withDefaults());
+                // @see LoginController
                 .formLogin(formLogin -> formLogin.loginPage("/login"));
 
         return http.build();
+    }
+
+    @Bean
+    WebSecurityCustomizer webSecurityCustomizer() {
+        return web -> web.debug(true)
+                .ignoring()
+                .requestMatchers("/webjars/**", "/images/**", "/css/**", "/assets/**", "/favicon.ico");
     }
 
     @Bean
@@ -77,6 +92,37 @@ public class SecurityConfig {
 
     @Bean
     RegisteredClientRepository jdbcRegisteredClientRepository(JdbcTemplate template) {
+
+//        return RegisteredClient.withId(UUID.randomUUID().toString())
+//                .clientId(clientId)
+//                .clientSecret(clientSecret)
+//                .clientName(clientId)
+//                .clientIdIssuedAt(Instant.now())
+//                .clientSecretExpiresAt(Instant.MAX)
+//                .clientAuthenticationMethods(methods -> {
+//                    methods.add(ClientAuthenticationMethod.CLIENT_SECRET_BASIC);
+//                })
+//                .authorizationGrantTypes(types -> {
+//                    types.add(AuthorizationGrantType.AUTHORIZATION_CODE);
+//                    types.add(AuthorizationGrantType.CLIENT_CREDENTIALS);
+//                    types.add(AuthorizationGrantType.REFRESH_TOKEN);
+//                })
+//                .redirectUri("http://127.0.0.1:8081")
+//                .redirectUri("http://127.0.0.1:8081/login/oauth2/code/springoauth2")
+//                .postLogoutRedirectUri("http://127.0.0.1/8081/logged-out")
+//                .scopes(scope -> {
+//                    scope.add(OidcScopes.OPENID);
+//                    scope.add(OidcScopes.EMAIL);
+//                    scope.add(OidcScopes.PROFILE);
+//                    scope.add(scope1);
+//                    scope.add(scope2);
+//                    scope.add("photo.write");
+//                    scope.add("photo.read");
+//                })
+//                .clientSettings(ClientSettings.builder().requireProofKey(false).build())  // pkce
+////                .tokenSettings(TokenSettings.builder().accessTokenTimeToLive(Duration.ofSeconds(1000L)).build())
+//                .build();
+
         return new JdbcRegisteredClientRepository(template);
     }
 
@@ -84,7 +130,6 @@ public class SecurityConfig {
     UserDetailsManager jdbcUserDetailsManager(DataSource dataSource) {
         return new JdbcUserDetailsManager(dataSource);
     }
-
     @Bean
     OAuth2AuthorizationService jdbcOAuth2AuthorizationService(
             JdbcOperations jdbcOperations,

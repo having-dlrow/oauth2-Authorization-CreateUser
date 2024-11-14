@@ -1,30 +1,85 @@
 server:
-  port: 8091
+  port: 8090
 
 spring:
 
   application:
-    name: ResourceServer
-
-  datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/msa_db}
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: ${SPRING_DATASOURCE_USERNAME:mysqluser}
-    password: ${SPRING_DATASOURCE_PASSWORD:Pa55w0rd}
-
-  sql:
-    init:
-      mode: always
-
-
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: http://localhost:9000 # AuthorizationServer
+    name: GatewayServer
   threads:
     virtual:
       enabled: true
+
+  cloud:
+    gateway:
+      default-filters:
+        - TokenRelay=
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+#            allowCredentials: true
+
+      routes:
+        - id: route1
+          uri: http://localhost:8091/
+          predicates:
+            - Path=/resource1/**
+          filters:
+            - RewritePath=/resource1/(?<segment>.*), /$\{segment}
+            - name: GlobalFilter
+
+        - id: route2
+          uri: http://localhost:8092/
+          predicates:
+            - Path=/resource2/**
+          filters:
+            - RewritePath=/resource2/(?<segment>.*), /$\{segment}
+            - name: GlobalFilter
+
+        - id: route3
+          uri: http://localhost:8092/
+          predicates:
+            - Path=/resource3/{segment}
+          filters:
+            - SetPath=/resourceserver03/{segment}
+
+        - id: angular
+          uri: http://localhost:4200/
+#          predicates:
+#            - Path=/angular/**
+#          filters:
+#            - RewritePath=/angular/(?<segment>.*), /$\{segment}
+          predicates:
+            - Path=/**
+          filters:
+            - TokenRelay=
+
+  security:
+    oauth2:
+      # Oauth2-Client
+      client:
+        provider:
+          spring:
+            issuer-uri: http://localhost:9000
+
+        registration:
+          # Provider ID must be specified for client registration
+          youtube-lecture-oauth2:
+            # (Optional)
+            provider: spring
+            # (required)
+            authorization-grant-type: authorization_code
+            # (required)
+            client-id: youtube-lecture-oauth2
+            # (required)
+            client-secret: secret
+            redirect-uri: http://127.0.0.1:8090/login/oauth2/code/youtube-lecture-oauth2  # JdbcClient
+            # (required)
+            scope: openid,profile
+            # (optional)
+            client-authentication-method: client_secret_basic
 
 logging:
   level:
@@ -32,8 +87,3 @@ logging:
     org:
       springframework:
         security: INFO
-
-clean:
-  database:
-    cron.expression: '0 */15 * * * *'
-    days: 0

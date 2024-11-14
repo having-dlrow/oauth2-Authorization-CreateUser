@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/AuthorizationServer" />
           </set>
         </option>
+        <option name="resolveExternalAnnotations" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="delegatedBuild" value="false" />
@@ -22,6 +23,7 @@
             <option value="$PROJECT_DIR$/GatewayServer" />
           </set>
         </option>
+        <option name="resolveExternalAnnotations" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="delegatedBuild" value="false" />
@@ -30,6 +32,16 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/ResourceServer" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ResourceServer2" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ResourceServer2" />
           </set>
         </option>
       </GradleProjectSettings>

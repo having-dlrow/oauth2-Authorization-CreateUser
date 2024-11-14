@@ -5,10 +5,135 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bebcf9d6-a3ae-4c5b-b518-77d4948e6d62" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/config/JwtConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/config/TokenConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/controller/KeyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/rotate/KeyGenerateRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/rotate/RsaKeyPairRepositoryJWKSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/rotate/key/Keys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/rotate/key/RsaKeyPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/rotate/repository/JdbcRsaKeyPairRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/rotate/repository/RsaKeyPairRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/rotate/repository/mapper/RsaKeyPairRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/rotate/repository/serialize/RsaPublicKeyConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/GatewayServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/controller/LogoutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/controller/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/filter/GlobalFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/controller/AuthorizationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/controller/Oauth2RegisteredClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/controller/SessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/controller/UsersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/controller2/Resource2Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/entity/Authorization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/entity/AuthorizationConsent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/entity/Oauth2RegisteredClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/entity/Session.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/service/db/AuthorizationConsentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/service/db/AuthorizationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/service/db/Oauth2RegisteredClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/service/db/SessionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/service/db/UsersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/resources/http/index.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-11T184630.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T032918.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T032959.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033026.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033100.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033115.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033142.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033206.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033303.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033349.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033439.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033650.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033712.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033727.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033744.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T123419.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T123502.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T124059.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T124412.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/ResourceServer.main.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorizationServer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorizationServer/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/config/KeyConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthorizationServer/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayServer/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/ResourceServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/ResourceServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/controller/AuthorityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/controller/AuthorityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/mapper/AuthoritiesResultExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/mapper/AuthoritiesResultExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/mapper/UserByUsernameExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/mapper/UserByUsernameExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/mapper/UserExtrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/mapper/UserExtrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/mapper/UserResultExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/mapper/UserResultExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/mapper/UserRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/mapper/UserRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/mapper/UserTestRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/mapper/UserTestRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/model/Authorities.java" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/model/Authorities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/model/Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/model/Authority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/model/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/model/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/model/User_Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/model/User_Authority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/service/AuthorityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/service/AuthorityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/service/CleanupDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/service/CleanupDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/service/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/service/UserService_archieve.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/service/UserService_archieve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayServer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/resources/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GatewayServer/src/test/java/com/example/jdbcclient/JdbcClientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayServer/src/test/java/com/example/gateway/JdbcClientApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/ResourceServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/controller/AuthorityController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/controller/RoleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/AuthoritiesResultExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/mapper/AuthoritiesResultExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/UserByUsernameExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/UserExtrator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/UserResultExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/mapper/UserResultExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/UserRowMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/UserTestRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/mapper/UserTestRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/Authorities.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/model/Authorities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/model/Authority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/model/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/User_Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/model/User_Authority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/service/AuthorityService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/service/CleanupDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/service/RoleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/service/UserService_archieve.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceServer/src/test/java/com/example/jdbcclient/JdbcClientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/test/java/com/example/gateway/JdbcClientApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/JdbcClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/JdbcClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/mapper/AuthoritiesResultExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/mapper/UserResultExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/mapper/UserRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/mapper/UserRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/mapper/UserTestRowMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/model/Authorities.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/model/Authorities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/model/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/model/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/model/User_Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/model/User_Authority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbcClient/src/test/java/com/example/jdbcclient/JdbcClientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/test/java/com/example/gateway/JdbcClientApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/model/Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/model/Authority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +151,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/ResourceServer">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/ResourceServer2">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/RestClient">
@@ -60,7 +188,61 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="GatewayServer" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="GatewayServer" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="GatewayServer" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="GatewayServer" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="GatewayServer" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testRuntimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jdbcClient" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jdbcClient" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jdbcClient" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="oauth2Client" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="oauth2Client" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="oauth2Client" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
               </path>
             </expand>
             <select />
@@ -72,6 +254,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Exception" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -95,12 +279,20 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Docker.docker-compose.yml.mysql: Compose Deployment.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.GatewayServer [build].executor": "Run",
+    "Gradle.GatewayServer [clean].executor": "Run",
+    "Gradle.Load Gradle Dependencies.executor": "Run",
     "Gradle.ResourceServer [:com.example.jdbcclient.ResourceServerApplication.main()].executor": "Run",
     "Gradle.RestClient [:com.example.restclient.RestClientApplication.main()].executor": "Run",
     "Gradle.jdbcClient [:com.example.jdbcclient.JdbcClientApplication.main()].executor": "Run",
     "Gradle.oauth2Client [clean].executor": "Run",
     "HTTP Request.authority | Token.executor": "Run",
     "HTTP Request.authority | getAllAuthorities.executor": "Run",
+    "HTTP Request.index | Gateway ResourceServer.executor": "Run",
+    "HTTP Request.index | Redirect to ResourceServer.executor": "Run",
+    "HTTP Request.index | getAllRoles#2.executor": "Run",
+    "HTTP Request.index | getAllRoles.executor": "Run",
     "HTTP Request.role | getAllRoles.executor": "Run",
     "HTTP Request.user | #1.executor": "Run",
     "HTTP Request.user | createUser.executor": "Run",
@@ -114,40 +306,51 @@
     "HTTP Request.user | getUser.executor": "Run",
     "HTTP Request.user | updateUser#1.executor": "Run",
     "HTTP Request.user | updateUser#2.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.AuthorizationServerApplication.executor": "Run",
+    "Spring Boot.GatewayServerApplication.executor": "Run",
     "Spring Boot.JdbcClientApplication.executor": "Run",
     "Spring Boot.Oauth2ClientApplication (1).executor": "Run",
     "Spring Boot.Oauth2ClientApplication.executor": "Run",
+    "Spring Boot.ResourceServer2Application.executor": "Run",
+    "Spring Boot.ResourceServerApplication (2).executor": "Run",
+    "Spring Boot.ResourceServerApplication.executor": "Run",
     "Spring Boot.RestClientApplication.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "gateway",
+    "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ysyoo/Documents/Github/ha-ving/SpringBootSpringAuthorizationServer/GatewayServer",
+    "last_opened_file_path": "C:/Users/ysyoo/Documents/Github/ha-ving/SpringBootSpringAuthorizationServer/ResourceServer2/src/main/resources/http",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.28965518",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "settings.editor.splitter.proportion": "0.16064256",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.authorizationserver.rotateKey" />
       <recent name="com.example.jdbcclient.service" />
       <recent name="com.example.oauth2client.service" />
       <recent name="com.example.oauth2client.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ysyoo\Documents\Github\ha-ving\SpringBootSpringAuthorizationServer\ResourceServer2\src\main\resources\http" />
       <recent name="C:\Users\ysyoo\Documents\Github\ha-ving\SpringBootSpringAuthorizationServer" />
       <recent name="C:\Users\ysyoo\Documents\Github\ha-ving\SpringBootSpringAuthorizationServer\RestClient\src\main\resources" />
     </key>
@@ -155,10 +358,11 @@
       <recent name="C:\Users\ysyoo\Documents\Github\ha-ving\SpringBootSpringAuthorizationServer\AuthorizationServer\src\main\resources\static\css" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.gateway.filter" />
+      <recent name="com.example.jdbcclient" />
+      <recent name="com.example.jdbcclient.controller" />
+      <recent name="com.example.jdbcclient.config" />
       <recent name="com.example.jdbcclient.service" />
-      <recent name="com.example.oauth2client.config" />
-      <recent name="com.example.oauth2client.model" />
-      <recent name="com.example.jdbcclient.model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -171,17 +375,58 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ResourceServerApplication">
-    <configuration name="authority | getAllAuthorities" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ResourceServer/src/main/resources/http/authority.http" requestIdentifier="getAllAuthorities" runType="Run single request">
+  <component name="RunManager" selected="Spring Boot.ResourceServer2Application">
+    <configuration name="GatewayServer [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/GatewayServer" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="role | getAllRoles" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ResourceServer/src/main/resources/http/role.http" requestIdentifier="getAllRoles" runType="Run single request">
+    <configuration name="GatewayServer [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/GatewayServer" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="user | createUser" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ResourceServer/src/main/resources/http/user.http" index="8" requestIdentifier="createUser" runType="Run single request">
+    <configuration name="index | Gateway ResourceServer" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ResourceServer2/src/main/resources/http/index.http" index="2" requestIdentifier="Gateway ResourceServer" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="user | getUser" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ResourceServer/src/main/resources/http/user.http" index="9" requestIdentifier="getUser" runType="Run single request">
+    <configuration name="index | Redirect to ResourceServer" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ResourceServer2/src/main/resources/http/index.http" requestIdentifier="Redirect to ResourceServer" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="index | getAllRoles#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ResourceServer2/src/main/resources/http/index.http" index="2" requestIdentifier="getAllRoles#2" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="AuthorizationServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -191,36 +436,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GatewayServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="GatewayServer.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.gateway.GatewayServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JdbcClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="jdbcClient.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.jdbcclient.JdbcClientApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.gateway.JdbcClientApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Oauth2ClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="oauth2Client.main~1" />
+    <configuration name="Oauth2ClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="oauth2Client.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.oauth2client.Oauth2ClientApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.oauth2client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResourceServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="GatewayServer.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.jdbcclient.ResourceServerApplication" />
+    <configuration name="ResourceServer2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ResourceServer2.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.gateway.ResourceServer2Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="ResourceServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ResourceServer.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.jdbcclient.ResourceServerApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.gateway.ResourceServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResourceServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ResourceServer2.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.gateway.ResourceServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -238,13 +491,27 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Gradle.GatewayServer [build]" />
+      <item itemvalue="Gradle.GatewayServer [clean]" />
+      <item itemvalue="HTTP Request.index | Gateway ResourceServer" />
+      <item itemvalue="HTTP Request.index | getAllRoles#2" />
+      <item itemvalue="HTTP Request.index | Redirect to ResourceServer" />
+      <item itemvalue="Spring Boot.AuthorizationServerApplication" />
+      <item itemvalue="Spring Boot.GatewayServerApplication" />
+      <item itemvalue="Spring Boot.JdbcClientApplication" />
+      <item itemvalue="Spring Boot.Oauth2ClientApplication" />
+      <item itemvalue="Spring Boot.ResourceServer2Application" />
+      <item itemvalue="Spring Boot.ResourceServerApplication" />
+      <item itemvalue="Spring Boot.RestClientApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Oauth2ClientApplication" />
-        <item itemvalue="HTTP Request.role | getAllRoles" />
-        <item itemvalue="HTTP Request.user | createUser" />
-        <item itemvalue="HTTP Request.user | getUser" />
-        <item itemvalue="HTTP Request.authority | getAllAuthorities" />
+        <item itemvalue="Gradle.GatewayServer [clean]" />
+        <item itemvalue="Gradle.GatewayServer [build]" />
+        <item itemvalue="HTTP Request.index | Gateway ResourceServer" />
+        <item itemvalue="HTTP Request.index | Redirect to ResourceServer" />
+        <item itemvalue="HTTP Request.index | getAllRoles#2" />
       </list>
     </recent_temporary>
   </component>
@@ -267,7 +534,11 @@
       <workItem from="1731305951408" duration="21236000" />
       <workItem from="1731332144781" duration="28626000" />
       <workItem from="1731398218613" duration="1859000" />
-      <workItem from="1731400129336" duration="4577000" />
+      <workItem from="1731400129336" duration="5221000" />
+      <workItem from="1731408791173" duration="1171000" />
+      <workItem from="1731409987973" duration="9009000" />
+      <workItem from="1731419220165" duration="1232000" />
+      <workItem from="1731478295372" duration="38597000" />
     </task>
     <servers />
   </component>
@@ -284,5 +555,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

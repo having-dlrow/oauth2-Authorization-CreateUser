@@ -60,9 +60,9 @@ CREATE TABLE if not exists oauth2_registered_client
 
 -- Insert new Oauth2 Registered Clients
 -- INSERT oauth2_registered_client VALUES("b9b14387-25d0-46c8-8406-2c11deff05f0", "client",  now(), "{bcrypt}$2a$14$k4M/IICUdwmeTk0/nByDqee/dZ3YRPK6KlHHqEcIKUfVZR3R8.AX6",
---  now()  + INTERVAL 1 DAY, "b9b14387-25d0-46c8-8406-2c11deff05f0", "client_secret_basic", "refresh_token,authorization_code", "http://127.0.0.1:8090/login/oauth2/code/gateway",
+--  now()  + INTERVAL 1 DAY, "b9b14387-25d0-46c8-8406-2c11deff05f0", "client_secret_basic", "refresh_token,authorization_code", "http://127.0.0.1:8090/login/oauth2/code/{{registerID}}",
 --  "http://127.0.0.1:8090/logged-out", "openid,profile",
---  "{\"@class\":\"java.util.Collections$UnmodifiableMap\",\"settings.client.require-proof-key\":false,\"settings.client.require-authorization-consent\":true}",
+--  "{\"@class\":\"java.util.Collections$UnmodifiableMap\",\"settings.client.require-proof-key\":true,\"settings.client.require-authorization-consent\":true}",
 --  "{\"@class\":\"java.util.Collections$UnmodifiableMap\",\"settings.token.reuse-refresh-tokens\":true,
 -- \"settings.token.id-token-signature-algorithm\":[\"org.springframework.security.oauth2.jose.jws.SignatureAlgorithm\",\"RS256\"],
 -- \"settings.token.access-token-time-to-live\":[\"java.time.Duration\",300.000000000],

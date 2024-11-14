@@ -1,3 +1,297 @@
+GET http://localhost:8090/resource2/resourceserver02
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxODIxOSwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTg1MTksImlhdCI6MTczMTQxODIxOSwianRpIjoiNmQ3Y2I4MGUtMTljYi00NmNjLTkxZTEtNDA3Mjk5YjRmNjAwIn0.SwQf-a_bmIH1IUxDLh-jSHEf3xOBa7kRSO8kBc1lnQNavFwHXtRk7KGFt3xCjgpyeAEVLX4xTRB0ahLG5oL6UMUwRcw2cXPT8ZwbhqHKnOv27DG064BnLVCNzU5-1mVYpNFF_oDUi46iF4lecngxbkZDRxn_VQnsekGNxnNMBQJK09udWqYPEWBYgpBOaPa1Mk_YkMGA7Ix38T25y05KslEp-qQMPIOnry3-TiLP6xJPwUtuFEIVD_2qygfu8GzGxOoXPKuWJ9F5vVx9RjzbVRYhkQQyxa42zUETxbMprObCQ8kk0x0cfmEZSz8wKB4TvtB1LHpUkBL_bhnwKT9Ivw
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T223212.404.json
+
+###
+
+GET http://localhost:8092/resourceserver02
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxODIxOSwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTg1MTksImlhdCI6MTczMTQxODIxOSwianRpIjoiNmQ3Y2I4MGUtMTljYi00NmNjLTkxZTEtNDA3Mjk5YjRmNjAwIn0.SwQf-a_bmIH1IUxDLh-jSHEf3xOBa7kRSO8kBc1lnQNavFwHXtRk7KGFt3xCjgpyeAEVLX4xTRB0ahLG5oL6UMUwRcw2cXPT8ZwbhqHKnOv27DG064BnLVCNzU5-1mVYpNFF_oDUi46iF4lecngxbkZDRxn_VQnsekGNxnNMBQJK09udWqYPEWBYgpBOaPa1Mk_YkMGA7Ix38T25y05KslEp-qQMPIOnry3-TiLP6xJPwUtuFEIVD_2qygfu8GzGxOoXPKuWJ9F5vVx9RjzbVRYhkQQyxa42zUETxbMprObCQ8kk0x0cfmEZSz8wKB4TvtB1LHpUkBL_bhnwKT9Ivw
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T223207.200.txt
+
+###
+
+GET http://localhost:8092/resourceserver02
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxODIxOSwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTg1MTksImlhdCI6MTczMTQxODIxOSwianRpIjoiNmQ3Y2I4MGUtMTljYi00NmNjLTkxZTEtNDA3Mjk5YjRmNjAwIn0.SwQf-a_bmIH1IUxDLh-jSHEf3xOBa7kRSO8kBc1lnQNavFwHXtRk7KGFt3xCjgpyeAEVLX4xTRB0ahLG5oL6UMUwRcw2cXPT8ZwbhqHKnOv27DG064BnLVCNzU5-1mVYpNFF_oDUi46iF4lecngxbkZDRxn_VQnsekGNxnNMBQJK09udWqYPEWBYgpBOaPa1Mk_YkMGA7Ix38T25y05KslEp-qQMPIOnry3-TiLP6xJPwUtuFEIVD_2qygfu8GzGxOoXPKuWJ9F5vVx9RjzbVRYhkQQyxa42zUETxbMprObCQ8kk0x0cfmEZSz8wKB4TvtB1LHpUkBL_bhnwKT9Ivw
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T223053.200.txt
+
+###
+
+GET http://localhost:8090/resource2/
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxODIxOSwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTg1MTksImlhdCI6MTczMTQxODIxOSwianRpIjoiNmQ3Y2I4MGUtMTljYi00NmNjLTkxZTEtNDA3Mjk5YjRmNjAwIn0.SwQf-a_bmIH1IUxDLh-jSHEf3xOBa7kRSO8kBc1lnQNavFwHXtRk7KGFt3xCjgpyeAEVLX4xTRB0ahLG5oL6UMUwRcw2cXPT8ZwbhqHKnOv27DG064BnLVCNzU5-1mVYpNFF_oDUi46iF4lecngxbkZDRxn_VQnsekGNxnNMBQJK09udWqYPEWBYgpBOaPa1Mk_YkMGA7Ix38T25y05KslEp-qQMPIOnry3-TiLP6xJPwUtuFEIVD_2qygfu8GzGxOoXPKuWJ9F5vVx9RjzbVRYhkQQyxa42zUETxbMprObCQ8kk0x0cfmEZSz8wKB4TvtB1LHpUkBL_bhnwKT9Ivw
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T223051.404.json
+
+###
+
+GET http://localhost:8092/resourceserver02
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNzI4Mywic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTc1ODMsImlhdCI6MTczMTQxNzI4MywianRpIjoiMzBmOGNmN2MtODQxNi00M2JhLThlOTItNDU0MDlmYTFjY2RiIn0.l51jeJwElKaen8vk7U_OFgiLRQOunrDabnUAWzxB7wzSvJGLnyFs84KCYLqrcyhP_8XGnxRMxppD26UZdkQobwHvvaAgROjr2XUusPue-1-xdhsdz4LfhWiZejSqnWjWEPx_YP8ypWtm-01uldAVp7eRvRf2UqH5m3jA11UUPp_ow0axxv_svC-2bffGPImxOo3XBC5plL3VVuXJlkq9D6e00K9vhysTxdThZzadNJoKgJR1BwLXDsYdnS0ru7sOzSQbNHDFxWzU1k_di9DJDADfmQZoTHr039IUTNfDspgPj2PW_pORisWV9DcOyeEfAdSN_E76jWNdxf2CNvIKXQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:8090/resource2/1
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNzI4Mywic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTc1ODMsImlhdCI6MTczMTQxNzI4MywianRpIjoiMzBmOGNmN2MtODQxNi00M2JhLThlOTItNDU0MDlmYTFjY2RiIn0.l51jeJwElKaen8vk7U_OFgiLRQOunrDabnUAWzxB7wzSvJGLnyFs84KCYLqrcyhP_8XGnxRMxppD26UZdkQobwHvvaAgROjr2XUusPue-1-xdhsdz4LfhWiZejSqnWjWEPx_YP8ypWtm-01uldAVp7eRvRf2UqH5m3jA11UUPp_ow0axxv_svC-2bffGPImxOo3XBC5plL3VVuXJlkq9D6e00K9vhysTxdThZzadNJoKgJR1BwLXDsYdnS0ru7sOzSQbNHDFxWzU1k_di9DJDADfmQZoTHr039IUTNfDspgPj2PW_pORisWV9DcOyeEfAdSN_E76jWNdxf2CNvIKXQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T221829.404.json
+
+###
+
+GET http://localhost:8090/resource2/*
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNzI4Mywic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTc1ODMsImlhdCI6MTczMTQxNzI4MywianRpIjoiMzBmOGNmN2MtODQxNi00M2JhLThlOTItNDU0MDlmYTFjY2RiIn0.l51jeJwElKaen8vk7U_OFgiLRQOunrDabnUAWzxB7wzSvJGLnyFs84KCYLqrcyhP_8XGnxRMxppD26UZdkQobwHvvaAgROjr2XUusPue-1-xdhsdz4LfhWiZejSqnWjWEPx_YP8ypWtm-01uldAVp7eRvRf2UqH5m3jA11UUPp_ow0axxv_svC-2bffGPImxOo3XBC5plL3VVuXJlkq9D6e00K9vhysTxdThZzadNJoKgJR1BwLXDsYdnS0ru7sOzSQbNHDFxWzU1k_di9DJDADfmQZoTHr039IUTNfDspgPj2PW_pORisWV9DcOyeEfAdSN_E76jWNdxf2CNvIKXQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T221817.404.json
+
+###
+
+GET http://localhost:8090/resource2
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNzI4Mywic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTc1ODMsImlhdCI6MTczMTQxNzI4MywianRpIjoiMzBmOGNmN2MtODQxNi00M2JhLThlOTItNDU0MDlmYTFjY2RiIn0.l51jeJwElKaen8vk7U_OFgiLRQOunrDabnUAWzxB7wzSvJGLnyFs84KCYLqrcyhP_8XGnxRMxppD26UZdkQobwHvvaAgROjr2XUusPue-1-xdhsdz4LfhWiZejSqnWjWEPx_YP8ypWtm-01uldAVp7eRvRf2UqH5m3jA11UUPp_ow0axxv_svC-2bffGPImxOo3XBC5plL3VVuXJlkq9D6e00K9vhysTxdThZzadNJoKgJR1BwLXDsYdnS0ru7sOzSQbNHDFxWzU1k_di9DJDADfmQZoTHr039IUTNfDspgPj2PW_pORisWV9DcOyeEfAdSN_E76jWNdxf2CNvIKXQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T221804.404.json
+
+###
+
+GET http://localhost:8092/resourceserver02
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNzI4Mywic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTc1ODMsImlhdCI6MTczMTQxNzI4MywianRpIjoiMzBmOGNmN2MtODQxNi00M2JhLThlOTItNDU0MDlmYTFjY2RiIn0.l51jeJwElKaen8vk7U_OFgiLRQOunrDabnUAWzxB7wzSvJGLnyFs84KCYLqrcyhP_8XGnxRMxppD26UZdkQobwHvvaAgROjr2XUusPue-1-xdhsdz4LfhWiZejSqnWjWEPx_YP8ypWtm-01uldAVp7eRvRf2UqH5m3jA11UUPp_ow0axxv_svC-2bffGPImxOo3XBC5plL3VVuXJlkq9D6e00K9vhysTxdThZzadNJoKgJR1BwLXDsYdnS0ru7sOzSQbNHDFxWzU1k_di9DJDADfmQZoTHr039IUTNfDspgPj2PW_pORisWV9DcOyeEfAdSN_E76jWNdxf2CNvIKXQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T221801.200.txt
+
+###
+
+GET http://localhost:8092/resourceserver02
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNzI4Mywic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTc1ODMsImlhdCI6MTczMTQxNzI4MywianRpIjoiMzBmOGNmN2MtODQxNi00M2JhLThlOTItNDU0MDlmYTFjY2RiIn0.l51jeJwElKaen8vk7U_OFgiLRQOunrDabnUAWzxB7wzSvJGLnyFs84KCYLqrcyhP_8XGnxRMxppD26UZdkQobwHvvaAgROjr2XUusPue-1-xdhsdz4LfhWiZejSqnWjWEPx_YP8ypWtm-01uldAVp7eRvRf2UqH5m3jA11UUPp_ow0axxv_svC-2bffGPImxOo3XBC5plL3VVuXJlkq9D6e00K9vhysTxdThZzadNJoKgJR1BwLXDsYdnS0ru7sOzSQbNHDFxWzU1k_di9DJDADfmQZoTHr039IUTNfDspgPj2PW_pORisWV9DcOyeEfAdSN_E76jWNdxf2CNvIKXQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T221634.200.txt
+
+###
+
+GET http://localhost:8092/resourceserver02/
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNzI4Mywic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTc1ODMsImlhdCI6MTczMTQxNzI4MywianRpIjoiMzBmOGNmN2MtODQxNi00M2JhLThlOTItNDU0MDlmYTFjY2RiIn0.l51jeJwElKaen8vk7U_OFgiLRQOunrDabnUAWzxB7wzSvJGLnyFs84KCYLqrcyhP_8XGnxRMxppD26UZdkQobwHvvaAgROjr2XUusPue-1-xdhsdz4LfhWiZejSqnWjWEPx_YP8ypWtm-01uldAVp7eRvRf2UqH5m3jA11UUPp_ow0axxv_svC-2bffGPImxOo3XBC5plL3VVuXJlkq9D6e00K9vhysTxdThZzadNJoKgJR1BwLXDsYdnS0ru7sOzSQbNHDFxWzU1k_di9DJDADfmQZoTHr039IUTNfDspgPj2PW_pORisWV9DcOyeEfAdSN_E76jWNdxf2CNvIKXQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T221629.404.json
+
+###
+
+GET http://localhost:8090/resource2/
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNzI4Mywic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTc1ODMsImlhdCI6MTczMTQxNzI4MywianRpIjoiMzBmOGNmN2MtODQxNi00M2JhLThlOTItNDU0MDlmYTFjY2RiIn0.l51jeJwElKaen8vk7U_OFgiLRQOunrDabnUAWzxB7wzSvJGLnyFs84KCYLqrcyhP_8XGnxRMxppD26UZdkQobwHvvaAgROjr2XUusPue-1-xdhsdz4LfhWiZejSqnWjWEPx_YP8ypWtm-01uldAVp7eRvRf2UqH5m3jA11UUPp_ow0axxv_svC-2bffGPImxOo3XBC5plL3VVuXJlkq9D6e00K9vhysTxdThZzadNJoKgJR1BwLXDsYdnS0ru7sOzSQbNHDFxWzU1k_di9DJDADfmQZoTHr039IUTNfDspgPj2PW_pORisWV9DcOyeEfAdSN_E76jWNdxf2CNvIKXQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T221553.404.json
+
+###
+
+GET http://localhost:8092/resourceserver02/
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNzI4Mywic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTc1ODMsImlhdCI6MTczMTQxNzI4MywianRpIjoiMzBmOGNmN2MtODQxNi00M2JhLThlOTItNDU0MDlmYTFjY2RiIn0.l51jeJwElKaen8vk7U_OFgiLRQOunrDabnUAWzxB7wzSvJGLnyFs84KCYLqrcyhP_8XGnxRMxppD26UZdkQobwHvvaAgROjr2XUusPue-1-xdhsdz4LfhWiZejSqnWjWEPx_YP8ypWtm-01uldAVp7eRvRf2UqH5m3jA11UUPp_ow0axxv_svC-2bffGPImxOo3XBC5plL3VVuXJlkq9D6e00K9vhysTxdThZzadNJoKgJR1BwLXDsYdnS0ru7sOzSQbNHDFxWzU1k_di9DJDADfmQZoTHr039IUTNfDspgPj2PW_pORisWV9DcOyeEfAdSN_E76jWNdxf2CNvIKXQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T221458.404.json
+
+###
+
+GET http://localhost:8092/resourceserver02/
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNjQwMCwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTY3MDAsImlhdCI6MTczMTQxNjQwMCwianRpIjoiZDQ1NjAyY2ItODdmMy00N2NiLWIwNDMtYzZmNjAxODAzMTUxIn0.FJwcld0Gob-xMUyaxUBKc2wNBE25HwBs1qTGJp-15saVK29rdEvjBR05Q5HYSGqzNorCIejhu4rmwOCsj45CJuB0n5QiNi2IJMsJRhME6rKieBdfs7y9cqjGHBK9VVHP1BNo-7tLccKEV2S4Y523H1VCUMpbF3S-_RccLmOXcipq5Cb00GiR5cfK6XXnlvwHu7tIu5njHU6Js-BHU2RmxQbbo5R3srT8UOa4Ha6eBbHIXQk_5HaHzt_MYcy8Y9hO4DtmyCz0Di5j03S5sg2z8HZ1VzPEGid_B9QkqJO6-h4ZJCNY7O2wDobx54lZBMe4Yszp3yMvSoNV5RKWceSYeg
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:8092/resource2
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNjQwMCwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTY3MDAsImlhdCI6MTczMTQxNjQwMCwianRpIjoiZDQ1NjAyY2ItODdmMy00N2NiLWIwNDMtYzZmNjAxODAzMTUxIn0.FJwcld0Gob-xMUyaxUBKc2wNBE25HwBs1qTGJp-15saVK29rdEvjBR05Q5HYSGqzNorCIejhu4rmwOCsj45CJuB0n5QiNi2IJMsJRhME6rKieBdfs7y9cqjGHBK9VVHP1BNo-7tLccKEV2S4Y523H1VCUMpbF3S-_RccLmOXcipq5Cb00GiR5cfK6XXnlvwHu7tIu5njHU6Js-BHU2RmxQbbo5R3srT8UOa4Ha6eBbHIXQk_5HaHzt_MYcy8Y9hO4DtmyCz0Di5j03S5sg2z8HZ1VzPEGid_B9QkqJO6-h4ZJCNY7O2wDobx54lZBMe4Yszp3yMvSoNV5RKWceSYeg
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:8090/resource2
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNjQwMCwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTY3MDAsImlhdCI6MTczMTQxNjQwMCwianRpIjoiZDQ1NjAyY2ItODdmMy00N2NiLWIwNDMtYzZmNjAxODAzMTUxIn0.FJwcld0Gob-xMUyaxUBKc2wNBE25HwBs1qTGJp-15saVK29rdEvjBR05Q5HYSGqzNorCIejhu4rmwOCsj45CJuB0n5QiNi2IJMsJRhME6rKieBdfs7y9cqjGHBK9VVHP1BNo-7tLccKEV2S4Y523H1VCUMpbF3S-_RccLmOXcipq5Cb00GiR5cfK6XXnlvwHu7tIu5njHU6Js-BHU2RmxQbbo5R3srT8UOa4Ha6eBbHIXQk_5HaHzt_MYcy8Y9hO4DtmyCz0Di5j03S5sg2z8HZ1VzPEGid_B9QkqJO6-h4ZJCNY7O2wDobx54lZBMe4Yszp3yMvSoNV5RKWceSYeg
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T220456.404.json
+
+###
+
+GET http://localhost:8090/resource2/1
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNjQwMCwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTY3MDAsImlhdCI6MTczMTQxNjQwMCwianRpIjoiZDQ1NjAyY2ItODdmMy00N2NiLWIwNDMtYzZmNjAxODAzMTUxIn0.FJwcld0Gob-xMUyaxUBKc2wNBE25HwBs1qTGJp-15saVK29rdEvjBR05Q5HYSGqzNorCIejhu4rmwOCsj45CJuB0n5QiNi2IJMsJRhME6rKieBdfs7y9cqjGHBK9VVHP1BNo-7tLccKEV2S4Y523H1VCUMpbF3S-_RccLmOXcipq5Cb00GiR5cfK6XXnlvwHu7tIu5njHU6Js-BHU2RmxQbbo5R3srT8UOa4Ha6eBbHIXQk_5HaHzt_MYcy8Y9hO4DtmyCz0Di5j03S5sg2z8HZ1VzPEGid_B9QkqJO6-h4ZJCNY7O2wDobx54lZBMe4Yszp3yMvSoNV5RKWceSYeg
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T220357.404.json
+
+###
+
+GET http://localhost:8090/resource2/
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNjQwMCwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTY3MDAsImlhdCI6MTczMTQxNjQwMCwianRpIjoiZDQ1NjAyY2ItODdmMy00N2NiLWIwNDMtYzZmNjAxODAzMTUxIn0.FJwcld0Gob-xMUyaxUBKc2wNBE25HwBs1qTGJp-15saVK29rdEvjBR05Q5HYSGqzNorCIejhu4rmwOCsj45CJuB0n5QiNi2IJMsJRhME6rKieBdfs7y9cqjGHBK9VVHP1BNo-7tLccKEV2S4Y523H1VCUMpbF3S-_RccLmOXcipq5Cb00GiR5cfK6XXnlvwHu7tIu5njHU6Js-BHU2RmxQbbo5R3srT8UOa4Ha6eBbHIXQk_5HaHzt_MYcy8Y9hO4DtmyCz0Di5j03S5sg2z8HZ1VzPEGid_B9QkqJO6-h4ZJCNY7O2wDobx54lZBMe4Yszp3yMvSoNV5RKWceSYeg
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T220354.404.json
+
+###
+
+GET http://localhost:8090/resource2
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNjQwMCwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTY3MDAsImlhdCI6MTczMTQxNjQwMCwianRpIjoiZDQ1NjAyY2ItODdmMy00N2NiLWIwNDMtYzZmNjAxODAzMTUxIn0.FJwcld0Gob-xMUyaxUBKc2wNBE25HwBs1qTGJp-15saVK29rdEvjBR05Q5HYSGqzNorCIejhu4rmwOCsj45CJuB0n5QiNi2IJMsJRhME6rKieBdfs7y9cqjGHBK9VVHP1BNo-7tLccKEV2S4Y523H1VCUMpbF3S-_RccLmOXcipq5Cb00GiR5cfK6XXnlvwHu7tIu5njHU6Js-BHU2RmxQbbo5R3srT8UOa4Ha6eBbHIXQk_5HaHzt_MYcy8Y9hO4DtmyCz0Di5j03S5sg2z8HZ1VzPEGid_B9QkqJO6-h4ZJCNY7O2wDobx54lZBMe4Yszp3yMvSoNV5RKWceSYeg
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T220349.404.json
+
+###
+
+GET http://localhost:8090/resource1/
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNjQwMCwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTY3MDAsImlhdCI6MTczMTQxNjQwMCwianRpIjoiZDQ1NjAyY2ItODdmMy00N2NiLWIwNDMtYzZmNjAxODAzMTUxIn0.FJwcld0Gob-xMUyaxUBKc2wNBE25HwBs1qTGJp-15saVK29rdEvjBR05Q5HYSGqzNorCIejhu4rmwOCsj45CJuB0n5QiNi2IJMsJRhME6rKieBdfs7y9cqjGHBK9VVHP1BNo-7tLccKEV2S4Y523H1VCUMpbF3S-_RccLmOXcipq5Cb00GiR5cfK6XXnlvwHu7tIu5njHU6Js-BHU2RmxQbbo5R3srT8UOa4Ha6eBbHIXQk_5HaHzt_MYcy8Y9hO4DtmyCz0Di5j03S5sg2z8HZ1VzPEGid_B9QkqJO6-h4ZJCNY7O2wDobx54lZBMe4Yszp3yMvSoNV5RKWceSYeg
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T220320.404.json
+
+###
+
+GET http://localhost:8090/resource1
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNjQwMCwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTY3MDAsImlhdCI6MTczMTQxNjQwMCwianRpIjoiZDQ1NjAyY2ItODdmMy00N2NiLWIwNDMtYzZmNjAxODAzMTUxIn0.FJwcld0Gob-xMUyaxUBKc2wNBE25HwBs1qTGJp-15saVK29rdEvjBR05Q5HYSGqzNorCIejhu4rmwOCsj45CJuB0n5QiNi2IJMsJRhME6rKieBdfs7y9cqjGHBK9VVHP1BNo-7tLccKEV2S4Y523H1VCUMpbF3S-_RccLmOXcipq5Cb00GiR5cfK6XXnlvwHu7tIu5njHU6Js-BHU2RmxQbbo5R3srT8UOa4Ha6eBbHIXQk_5HaHzt_MYcy8Y9hO4DtmyCz0Di5j03S5sg2z8HZ1VzPEGid_B9QkqJO6-h4ZJCNY7O2wDobx54lZBMe4Yszp3yMvSoNV5RKWceSYeg
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T220313.404.json
+
+###
+
+GET http://localhost:8090/resource1/resourceserver01
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNjQwMCwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTY3MDAsImlhdCI6MTczMTQxNjQwMCwianRpIjoiZDQ1NjAyY2ItODdmMy00N2NiLWIwNDMtYzZmNjAxODAzMTUxIn0.FJwcld0Gob-xMUyaxUBKc2wNBE25HwBs1qTGJp-15saVK29rdEvjBR05Q5HYSGqzNorCIejhu4rmwOCsj45CJuB0n5QiNi2IJMsJRhME6rKieBdfs7y9cqjGHBK9VVHP1BNo-7tLccKEV2S4Y523H1VCUMpbF3S-_RccLmOXcipq5Cb00GiR5cfK6XXnlvwHu7tIu5njHU6Js-BHU2RmxQbbo5R3srT8UOa4Ha6eBbHIXQk_5HaHzt_MYcy8Y9hO4DtmyCz0Di5j03S5sg2z8HZ1VzPEGid_B9QkqJO6-h4ZJCNY7O2wDobx54lZBMe4Yszp3yMvSoNV5RKWceSYeg
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T220256.404.json
+
+###
+
+GET http://localhost:8090
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNjQwMCwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTY3MDAsImlhdCI6MTczMTQxNjQwMCwianRpIjoiZDQ1NjAyY2ItODdmMy00N2NiLWIwNDMtYzZmNjAxODAzMTUxIn0.FJwcld0Gob-xMUyaxUBKc2wNBE25HwBs1qTGJp-15saVK29rdEvjBR05Q5HYSGqzNorCIejhu4rmwOCsj45CJuB0n5QiNi2IJMsJRhME6rKieBdfs7y9cqjGHBK9VVHP1BNo-7tLccKEV2S4Y523H1VCUMpbF3S-_RccLmOXcipq5Cb00GiR5cfK6XXnlvwHu7tIu5njHU6Js-BHU2RmxQbbo5R3srT8UOa4Ha6eBbHIXQk_5HaHzt_MYcy8Y9hO4DtmyCz0Di5j03S5sg2z8HZ1VzPEGid_B9QkqJO6-h4ZJCNY7O2wDobx54lZBMe4Yszp3yMvSoNV5RKWceSYeg
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T220230.404.json
+
+###
+
+GET http://localhost:8090/resourceserver02
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNjQwMCwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTY3MDAsImlhdCI6MTczMTQxNjQwMCwianRpIjoiZDQ1NjAyY2ItODdmMy00N2NiLWIwNDMtYzZmNjAxODAzMTUxIn0.FJwcld0Gob-xMUyaxUBKc2wNBE25HwBs1qTGJp-15saVK29rdEvjBR05Q5HYSGqzNorCIejhu4rmwOCsj45CJuB0n5QiNi2IJMsJRhME6rKieBdfs7y9cqjGHBK9VVHP1BNo-7tLccKEV2S4Y523H1VCUMpbF3S-_RccLmOXcipq5Cb00GiR5cfK6XXnlvwHu7tIu5njHU6Js-BHU2RmxQbbo5R3srT8UOa4Ha6eBbHIXQk_5HaHzt_MYcy8Y9hO4DtmyCz0Di5j03S5sg2z8HZ1VzPEGid_B9QkqJO6-h4ZJCNY7O2wDobx54lZBMe4Yszp3yMvSoNV5RKWceSYeg
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T220156.404.json
+
+###
+
+GET http://localhost:8092/resourceserver02
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiI4NWY0NmRmNC04YTYzLTRhZjAtODg0My03ZTQwMWM4MjFmZGQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTQxNjQwMCwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzE0MTY3MDAsImlhdCI6MTczMTQxNjQwMCwianRpIjoiZDQ1NjAyY2ItODdmMy00N2NiLWIwNDMtYzZmNjAxODAzMTUxIn0.FJwcld0Gob-xMUyaxUBKc2wNBE25HwBs1qTGJp-15saVK29rdEvjBR05Q5HYSGqzNorCIejhu4rmwOCsj45CJuB0n5QiNi2IJMsJRhME6rKieBdfs7y9cqjGHBK9VVHP1BNo-7tLccKEV2S4Y523H1VCUMpbF3S-_RccLmOXcipq5Cb00GiR5cfK6XXnlvwHu7tIu5njHU6Js-BHU2RmxQbbo5R3srT8UOa4Ha6eBbHIXQk_5HaHzt_MYcy8Y9hO4DtmyCz0Di5j03S5sg2z8HZ1VzPEGid_B9QkqJO6-h4ZJCNY7O2wDobx54lZBMe4Yszp3yMvSoNV5RKWceSYeg
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T220126.200.txt
+
+###
+
 GET http://localhost:8091/role
 Content-Type: application/json
 Authorization: Bearer eyJraWQiOiJiODU5NjM0Ny00ZTYyLTRjNjktYjJiMS1hNjExODE5NzNjOTkiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ1c2VyOTkyIiwiYXVkIjoieW91dHViZS1sZWN0dXJlLW9hdXRoMiIsIm5iZiI6MTczMTM5MTQyNiwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAiLCJleHAiOjE3MzEzOTE3MjYsImlhdCI6MTczMTM5MTQyNiwianRpIjoiY2I0NTRmNTktN2FkNy00ODhlLWExYzktYTdkNGI4MmMzYjFhIn0.eXWHro1oUpy65gKQa1a5xEBREnkv6KzB13d0o5d53IuFIAxbYzZ7XvSDOr6I45WpFZKW6Q4bcXv4_hwTMEhKvozYMbm04J2cTGzwK6489pephdcYxkMFTGVuxFdFFLHJZ0Dca0VxT_cOfyWIelP1iijr1Iqi8vaR4YQ-bTsnSJi15AAs6puF5Mw-i1c42OoTMPoe5BH02eEmDIAhpIP74oRdiKpw1L5swPrmzuGLXVsycl5b0Oh031QU9QyC0j9H7rGKMVN4dpqxjt99FrVCRSbzTawQ62y-gow6p8EvDIJ0L2tZt0BpRpvF8xlB5C6QaYnvtHjkW3oacU_PN7AYEQ
@@ -403,322 +697,6 @@ Accept: */*
 content-length: 0
 
 <> 2024-11-12T124453.200.json
-
-###
-
-GET http://localhost:8091/role
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-###
-
-GET http://localhost:8091/authority
-Content-Type: application/json
-Authorization: Bearer eyJraWQiOiJiODU5NjM0Ny00ZTYyLTRjNjktYjJiMS1hNjExODE5NzNjOTkiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImF1ZCI6InlvdXR1YmUtbGVjdHVyZS1vYXV0aDIiLCJuYmYiOjE3MzEzODMwMzUsInNjb3BlIjpbIm9wZW5pZCIsInByb2ZpbGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwIiwiZXhwIjoxNzMxMzgzMzM1LCJpYXQiOjE3MzEzODMwMzUsImp0aSI6IjFhYTBmYTMwLTZhYTktNGQ5OC04NTlmLTRlMTY1ZmE4MmRiNyJ9.sOkZrm1ZKC48BrqQ-YWhOzgu_6g7Fut5rR5CskUvsOAaiVzsJLP15UfnShz_aan6yNuIoku_spO07kyct5FDwIdWPFx0x9DPqNuem7w-RIsn272xczIUk2GtZ464dp-ubY_hZy2MYkMwmQ4DdkzeUSsZWXOHJJt_EvMY1D6OXJ_5z-4-AzOZceGZwwLNrqTvf_3opnO45_ZkcKJOYelZ-OrJ4LJvMRXh2vNqBIEgAXCOkguEVAJbhihVCdWiInN3qNOVwNCBswqdqauTQuWYHfCj-i8YtdGuGa3MK26meiyvyhov5Xmtg0xGVjZSCSDKI5JeU4_0mwBgpMVvtkHaCQ
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-11-12T124412.200.json
-
-###
-
-GET http://localhost:8091/authority
-Content-Type: application/json
-Authorization: Bearer eyJraWQiOiJiODU5NjM0Ny00ZTYyLTRjNjktYjJiMS1hNjExODE5NzNjOTkiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImF1ZCI6InlvdXR1YmUtbGVjdHVyZS1vYXV0aDIiLCJuYmYiOjE3MzEzODI0MzMsInNjb3BlIjpbIm9wZW5pZCIsInByb2ZpbGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwIiwiZXhwIjoxNzMxMzgyNzMzLCJpYXQiOjE3MzEzODI0MzMsImp0aSI6ImViMDc4MDNkLTdjZTMtNDI5Mi1hMzExLThkY2ViYThkMzIwMCJ9.oNhkcs4IEhc4jiDYMWhH8TIx7LNQVPb1K7aP9_a2nhYlmUli3xYiONplEfjs-4rhswuRCyKoeV5t9yOv89hjSLjb4Hdzcs5GOnpNKwTnFP8EnEJaCnH3p5BzS3Lv8Y2laKjrnvO4bk8wIWSaRQ8_4zyZm4Y4rT1k27Lyv01Cfl6KnyoHc0Z4R7RZ295J7jlHBfZPf9hZXaHGtNoW2iCUN8X8RudQ5UAXu-AuCpfBIF58Oy4baLLeUlsJ0BFio7GH67S9h5_o8b9_ZLIpxDMgewr16F8bWsPa-Ly-Y2QjyWUeaLhq049PU_s2xI5KDNlWBY9Oupw7lUSEJuowtl3sDw
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-###
-
-POST http://localhost:9000/oauth2/token
-Content-Type: application/x-www-form-urlencoded
-Authorization: Basic eW91dHViZS1sZWN0dXJlLW9hdXRoMjpzZWNyZXQ=
-Content-Length: 269
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-code=iRxFs9wC_bnjIQyZlkYRoV2CMAL0alnvvPwA01PZhVi8iNb_cBF_4zf4gySvc-c4sEKMsdbpNGfhDmaHROP6Glf4hCWa96Vtgb2iA5j7sZFXfqttu1_EdmO1b5cWlbCF&grant_type=authorization_code&client_id=youtube-lecture-oauth2&client_secret=secret&redirect_uri=https%3A%2F%2Foidcdebugger.com%2Fdebug
-
-<> 2024-11-12T124059.400.json
-
-###
-
-POST http://localhost:9000/oauth2/token
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 269
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-grant_type=authorization_code&code=yX1JNwmx6qFAg-BVBOnttaVcQ6-b4xmy74CxtYLx7CY9ML2G9N9-4eHxxBq8dGd-1WdOqZ8scHKLoZXmTVdJfUJntZsXOUbdm7vyeqjXfM3sH2f0wNXmxrl8WhfEpP7i&client_id=youtube-lecture-oauth2&client_secret=secret&redirect_uri=https%3A%2F%2Foidcdebugger.com%2Fdebug
-
-<> 2024-11-12T123502.401.json
-
-###
-
-GET http://localhost:8091/authority
-Content-Type: application/json
-Authorization: Bearer eyJraWQiOiJiODU5NjM0Ny00ZTYyLTRjNjktYjJiMS1hNjExODE5NzNjOTkiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImF1ZCI6InlvdXR1YmUtbGVjdHVyZS1vYXV0aDIiLCJuYmYiOjE3MzEzODI0MzMsInNjb3BlIjpbIm9wZW5pZCIsInByb2ZpbGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwIiwiZXhwIjoxNzMxMzgyNzMzLCJpYXQiOjE3MzEzODI0MzMsImp0aSI6ImViMDc4MDNkLTdjZTMtNDI5Mi1hMzExLThkY2ViYThkMzIwMCJ9.oNhkcs4IEhc4jiDYMWhH8TIx7LNQVPb1K7aP9_a2nhYlmUli3xYiONplEfjs-4rhswuRCyKoeV5t9yOv89hjSLjb4Hdzcs5GOnpNKwTnFP8EnEJaCnH3p5BzS3Lv8Y2laKjrnvO4bk8wIWSaRQ8_4zyZm4Y4rT1k27Lyv01Cfl6KnyoHc0Z4R7RZ295J7jlHBfZPf9hZXaHGtNoW2iCUN8X8RudQ5UAXu-AuCpfBIF58Oy4baLLeUlsJ0BFio7GH67S9h5_o8b9_ZLIpxDMgewr16F8bWsPa-Ly-Y2QjyWUeaLhq049PU_s2xI5KDNlWBY9Oupw7lUSEJuowtl3sDw
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-11-12T123419.200.json
-
-###
-
-POST http://localhost:9000/oauth2/token
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 269
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-grant_type=authorization_code&code=-J-yLf5CY6uzOp1m2G0VvEVwRuYUmp9oQNSC6ZNZDF8h64ooaLGW3RDa41U3VMa4oYFkxN5jBMoh7azG2ArdDySJpsw8m2Ix85hGzGL6vhBfe7A93fgridRQFP71OLg7&client_id=youtube-lecture-oauth2&client_secret=secret&redirect_uri=https%3A%2F%2Foidcdebugger.com%2Fdebug
-
-<> 2024-11-12T033744.401.json
-
-###
-
-POST http://localhost:9000/oauth2/token
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 269
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-grant_type=authorization_code&code=_ftSNxxkCw16_wLGWkUwHvfdtjokLwwFp2LsP7YYSlWfFfiS7R_MamVwbDdPSuW8V9V5uzgTPH4Y-Uyr4tgKAmrdjTIlRv-12w4N9teB-gggiX46fPKIsAEcPVgYNCxr&client_id=youtube-lecture-oauth2&client_secret=secret&redirect_uri=https%3A%2F%2Foidcdebugger.com%2Fdebug
-
-<> 2024-11-12T033727.401.json
-
-###
-
-POST http://localhost:9000/oauth2/token
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 281
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-grant_type=authorization_code&code=_ftSNxxkCw16_wLGWkUwHvfdtjokLwwFp2LsP7YYSlWfFfiS7R_MamVwbDdPSuW8V9V5uzgTPH4Y-Uyr4tgKAmrdjTIlRv-12w4N9teB-gggiX46fPKIsAEcPVgYNCxr&client_id=youtube-lecture-oauth2&client_secret=%7BclientSecret%7D&redirect_uri=https%3A%2F%2Foidcdebugger.com%2Fdebug
-
-<> 2024-11-12T033712.401.json
-
-###
-
-POST http://localhost:9000/oauth2/token
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 281
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-grant_type=authorization_code&code=H1qk5yZe1kyzZeFTNh0eej0Tmu5LApdR8BDbS3WqKfGdqmBtBsskUheHyBtlU-P6GSwE4bcCAgMDifYJSi4-WvkD9sCMxlJAeEf9_0oa8bIscboZ7Ims6mbY1_XBO-4w&client_id=youtube-lecture-oauth2&client_secret=%7BclientSecret%7D&redirect_uri=https%3A%2F%2Foidcdebugger.com%2Fdebug
-
-<> 2024-11-12T033650.401.json
-
-###
-
-POST http://localhost:9000/oauth2/token
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 281
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-grant_type=authorization_code&code=H1qk5yZe1kyzZeFTNh0eej0Tmu5LApdR8BDbS3WqKfGdqmBtBsskUheHyBtlU-P6GSwE4bcCAgMDifYJSi4-WvkD9sCMxlJAeEf9_0oa8bIscboZ7Ims6mbY1_XBO-4w&client_id=youtube-lecture-oauth2&client_secret=%7BclientSecret%7D&redirect_uri=https%3A%2F%2Foidcdebugger.com%2Fdebug
-
-<> 2024-11-12T033439.401.json
-
-###
-
-POST http://localhost:9000/oauth2/token
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 269
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-grant_type=authorization_code&code=N1Ab0D7ccOgSLd0yulQoXfIErGRAy5680QVgNt4Rsz3DhI_5_cyXnmm7JseDFWSMH49YzqfQJHOoLzW87PLoCuwJ9R40kznBfdbSGcag3laDekZCt8Ze-TrrS7ollsC4&client_id=youtube-lecture-oauth2&client_secret=secret&redirect_uri=https%3A%2F%2Foidcdebugger.com%2Fdebug
-
-<> 2024-11-12T033349.401.json
-
-###
-
-POST http://localhost:9000/oauth2/token
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 269
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-grant_type=authorization_code&code=N1Ab0D7ccOgSLd0yulQoXfIErGRAy5680QVgNt4Rsz3DhI_5_cyXnmm7JseDFWSMH49YzqfQJHOoLzW87PLoCuwJ9R40kznBfdbSGcag3laDekZCt8Ze-TrrS7ollsC4&client_id=youtube-lecture-oauth2&client_secret=secret&redirect_uri=https%3A%2F%2Foidcdebugger.com%2Fdebug
-
-<> 2024-11-12T033303.401.json
-
-###
-
-POST http://localhost:9000/oauth2/token
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 281
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-grant_type=authorization_code&code=N1Ab0D7ccOgSLd0yulQoXfIErGRAy5680QVgNt4Rsz3DhI_5_cyXnmm7JseDFWSMH49YzqfQJHOoLzW87PLoCuwJ9R40kznBfdbSGcag3laDekZCt8Ze-TrrS7ollsC4&client_id=youtube-lecture-oauth2&client_secret=%7BclientSecret%7D&redirect_uri=https%3A%2F%2Foidcdebugger.com%2Fdebug
-
-<> 2024-11-12T033206.401.json
-
-###
-
-POST http://localhost:9000/oauth2/token
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 281
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-grant_type=authorization_code&code=N1Ab0D7ccOgSLd0yulQoXfIErGRAy5680QVgNt4Rsz3DhI_5_cyXnmm7JseDFWSMH49YzqfQJHOoLzW87PLoCuwJ9R40kznBfdbSGcag3laDekZCt8Ze-TrrS7ollsC4&client_id=youtube-lecture-oauth2&client_secret=%7BclientSecret%7D&redirect_uri=https%3A%2F%2Foidcdebugger.com%2Fdebug
-
-<> 2024-11-12T033142.401.json
-
-###
-
-POST http://localhost:9000/oauth2/token
-Authorization: Basic b2F1dGgyLWNsaWVudC1hcHAxOnNlY3JldDE=
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 215
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-Cookie: SESSION=Nzk5NjY5NmEtNTUxMS00NTY5LWI4OWQtYTZmMDg4OTk5MzZj
-
-code=zh_Q3mxl3G08mZ2fYeBWa3HeCFy2vV7hSj4faxU1PuFDtOZsjV9ibEKHJ0Q7VHQilAqKYP8NuGFHkDhsZYpZZ4DpiTSKZ-HFbod45YFBGwLNfsAVElvv4HyYuew7HCof&redirect_uri=https%3A%2F%2Foidcdebugger.com%2Fdebug&grant_type=authorization_code
-
-<> 2024-11-12T033115.401.json
-
-###
-
-POST http://localhost:9000/oauth2/token
-Authorization: Basic b2F1dGgyLWNsaWVudC1hcHAxOnNlY3JldDE=
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 216
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-Cookie: SESSION=Nzk5NjY5NmEtNTUxMS00NTY5LWI4OWQtYTZmMDg4OTk5MzZj
-
-code=zh_Q3mxl3G08mZ2fYeBWa3HeCFy2vV7hSj4faxU1PuFDtOZsjV9ibEKHJ0Q7VHQilAqKYP8NuGFHkDhsZYpZZ4DpiTSKZ-HFbod45YFBGwLNfsAVElvv4HyYuew7HCof&redirect_uri=https%3A%2F%2Foauthdebugger.com%2Fdebug&grant_type=authorization_code
-
-<> 2024-11-12T033100.401.json
-
-###
-
-POST http://localhost:9000/oauth2/token
-Authorization: Basic b2F1dGgyLWNsaWVudC1hcHAxOnNlY3JldDE=
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 216
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-Cookie: SESSION=Nzk5NjY5NmEtNTUxMS00NTY5LWI4OWQtYTZmMDg4OTk5MzZj
-
-code=4X1aQqd31kf1t_tAB_TOAdMlegEPs3q9wEUB_IAL34LTWgWre4ucbOI-7xgHi5RduelANi7IDBxPqCEpxpNfHrAo6RsrMcIVWMD6_j3_0g-mm8I_kE5BK1N04Cn5Bjdi&redirect_uri=https%3A%2F%2Foauthdebugger.com%2Fdebug&grant_type=authorization_code
-
-<> 2024-11-12T033026.401.json
-
-###
-
-POST http://localhost:9000/oauth2/token
-Authorization: Basic b2F1dGgyLWNsaWVudC1hcHAxOnNlY3JldDE=
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 216
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-Cookie: SESSION=Nzk5NjY5NmEtNTUxMS00NTY5LWI4OWQtYTZmMDg4OTk5MzZj
-
-code=qUt15JFWqwjfPKNL9crybJLwKSgpxIVNHO_AYPuPIfbyj3kk8BdjJyrGSYQpgk8d7SI2Z3Z1n7RFfgnGaB8dvCCS8IAOm45QAxfqFhheLPFEPMkX6foF-aNXRtV5-yW2&redirect_uri=https%3A%2F%2Foauthdebugger.com%2Fdebug&grant_type=authorization_code
-
-<> 2024-11-12T032959.401.json
-
-###
-
-POST http://localhost:9000/oauth2/token
-Authorization: Basic b2F1dGgyLWNsaWVudC1hcHAxOnNlY3JldDE=
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 206
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-Cookie: SESSION=Nzk5NjY5NmEtNTUxMS00NTY5LWI4OWQtYTZmMDg4OTk5MzZj
-
-code=qUt15JFWqwjfPKNL9crybJLwKSgpxIVNHO_AYPuPIfbyj3kk8BdjJyrGSYQpgk8d7SI2Z3Z1n7RFfgnGaB8dvCCS8IAOm45QAxfqFhheLPFEPMkX6foF-aNXRtV5-yW2&redirect_uri=http%3A%2F%2F127.0.0.1%3A8081&grant_type=authorization_code
-
-<> 2024-11-12T032918.401.json
-
-###
-
-GET http://localhost:8091/authority
-Content-Type: application/json
-Authorization: Bearer 4X1aQqd31kf1t_tAB_TOAdMlegEPs3q9wEUB_IAL34LTWgWre4ucbOI-7xgHi5RduelANi7IDBxPqCEpxpNfHrAo6RsrMcIVWMD6_j3_0g-mm8I_kE5BK1N04Cn5Bjdi
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-###
-
-GET http://localhost:8091/authority
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-###
-
-GET http://localhost:8081/user/user999
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-###
-
-DELETE http://localhost:8081/user/user999
-Content-Type: application/json
-Content-Length: 72
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "username": "user999",
-  "password": "password",
-  "enabled": true
-}
-
-###
-
-GET http://localhost:8081/user/user999
-Content-Type: application/json
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-11-11T184630.200.json
 
 ###
 

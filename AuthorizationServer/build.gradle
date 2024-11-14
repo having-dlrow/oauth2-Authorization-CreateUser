@@ -19,13 +19,16 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-authorization-server'
-    implementation 'org.springframework.session:spring-session-jdbc'
 
-
-    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-
+    // user store in db
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
     runtimeOnly 'com.mysql:mysql-connector-j'
+
+    // sesion store
+    implementation 'org.springframework.session:spring-session-jdbc'
+
+    // login page
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
