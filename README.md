@@ -167,7 +167,7 @@ $ ng serve --port 4200
 - [ Setup - Rotating Keys (3)](https://www.youtube.com/watch?v=2l9-flGO-5A)
   [🦊 jdbc_rotating_keys_encryptor](https://github.com/wdkeyser02/SpringSecurityCloudGatewayAngularTutorial/tree/jdbc_rotating_keys_encryptor)
 
-### Chapter04-1 2Factor / Spring Authorization Server - Spring Cloud Gateway - Angular App
+### Chapter04-1 Google Authenticator (2Factor) / Spring Authorization Server - Spring Cloud Gateway - Angular App
 
 - [ Setup - Two-Factor authentication 1](https://www.youtube.com/watch?v=EuQyNYRiYhk)
   [🫎 part01](https://github.com/wdkeyser02/SpringMfaAuthorizationServer/tree/part01)
@@ -203,3 +203,24 @@ $ ng serve --port 4200
 -[X] [TokenRelay Exception Due To ReadOnlyHttpHeaders #3568](https://github.com/spring-cloud/spring-cloud-gateway/issues/3568)
   - REF: https://github.com/spring-projects/spring-security/issues/15974
   - build.gradle  
+
+-[X] [No AuthenticationProvider found for org.springframework.security.authentication.UsernamePasswordAuthenticationToken](https://github.com/spring-projects/spring-security/issues/13652)
+ ```
+     @Bean
+    public DaoAuthenticationProvider authenticationProvider(CustomUserDetailsService customUserDetailsService) {
+        DaoAuthenticationProvider auth = new DaoAuthenticationProvider();
+        auth.setUserDetailsService(customUserDetailsService);
+        auth.setPasswordEncoder(passwordEncoder());
+        return auth;
+    }
+ ```
+
+-[X] Failed to serialize object using DefaultSerializer
+-[X] The class with com.example.authorizationserver.user.CustomUserDetails and name of com.example.authorizationserver.user.CustomUserDetails is not in the allowlist. If you believe this class is safe to deserialize, please provide an explicit mapping using Jackson annotations or by providing a Mixin. If the serialization is only done by a trusted source, you can also enable default typing. See https://github.com/spring-projects/spring-security/issues/4370 for details
+```
+@JsonDeserialize
+@JsonIgnoreProperties(ignoreUnknown = true)
+public record User(
+  . . .
+) implements UserDetails {
+```

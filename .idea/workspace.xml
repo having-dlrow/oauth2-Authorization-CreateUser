@@ -5,135 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bebcf9d6-a3ae-4c5b-b518-77d4948e6d62" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/config/JwtConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/config/TokenConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/controller/KeyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/rotate/KeyGenerateRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/rotate/RsaKeyPairRepositoryJWKSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/rotate/key/Keys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/rotate/key/RsaKeyPair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/rotate/repository/JdbcRsaKeyPairRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/rotate/repository/RsaKeyPairRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/rotate/repository/mapper/RsaKeyPairRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/rotate/repository/serialize/RsaPublicKeyConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/GatewayServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/controller/LogoutController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/controller/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/filter/GlobalFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/controller/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/controller/AuthorizationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/controller/Oauth2RegisteredClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/controller/SessionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/controller/UsersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/controller2/Resource2Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/entity/Authorization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/entity/AuthorizationConsent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/entity/Oauth2RegisteredClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/entity/Session.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/service/db/AuthorizationConsentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/service/db/AuthorizationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/service/db/Oauth2RegisteredClientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/service/db/SessionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/java/com/example/gateway/service/db/UsersService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ResourceServer2/src/main/resources/http/index.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-11T184630.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T032918.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T032959.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033026.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033100.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033115.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033142.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033206.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033303.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033349.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033439.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033650.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033712.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033727.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T033744.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T123419.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T123502.401.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T124059.400.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-12T124412.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/ResourceServer.main.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthorizationServer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorizationServer/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/config/KeyConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/java/com/example/authorizationserver/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthorizationServer/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorizationServer/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayServer/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/ResourceServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/ResourceServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/controller/AuthorityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/controller/AuthorityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/controller/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/mapper/AuthoritiesResultExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/mapper/AuthoritiesResultExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/mapper/UserByUsernameExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/mapper/UserByUsernameExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/mapper/UserExtrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/mapper/UserExtrator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/mapper/UserResultExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/mapper/UserResultExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/mapper/UserRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/mapper/UserRowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/mapper/UserTestRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/mapper/UserTestRowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/model/Authorities.java" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/model/Authorities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/model/Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/model/Authority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/model/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/model/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/model/User_Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/gateway/model/User_Authority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/service/AuthorityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/service/AuthorityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/service/CleanupDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/service/CleanupDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/service/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/java/com/example/jdbcclient/service/UserService_archieve.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/service/UserService_archieve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayServer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/main/resources/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GatewayServer/src/test/java/com/example/jdbcclient/JdbcClientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/GatewayServer/src/test/java/com/example/gateway/JdbcClientApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/config/UsersConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/config/UsersConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/securityHandler/MFAHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/securityHandler/MFAHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/user/CustomAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/user/CustomAuthenticationProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/user/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/user/CustomUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/user/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/user/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/user/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/ResourceServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/controller/AuthorityController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/controller/RoleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/AuthoritiesResultExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/mapper/AuthoritiesResultExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/UserByUsernameExtractor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/UserExtrator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/UserResultExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/mapper/UserResultExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/UserRowMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/mapper/UserTestRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/mapper/UserTestRowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/Authorities.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/model/Authorities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/model/Authority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/model/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/model/User_Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/gateway/model/User_Authority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/service/AuthorityService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/service/CleanupDatabase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/service/RoleService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/main/java/com/example/jdbcclient/service/UserService_archieve.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceServer/src/test/java/com/example/jdbcclient/JdbcClientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ResourceServer/src/test/java/com/example/gateway/JdbcClientApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/JdbcClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/JdbcClientApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/mapper/AuthoritiesResultExtractor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/mapper/UserResultExtractor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/mapper/UserRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/mapper/UserRowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/mapper/UserTestRowMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/model/Authorities.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/model/Authorities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/model/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/model/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/model/User_Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/model/User_Authority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/jdbcclient/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/main/java/com/example/gateway/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbcClient/src/test/java/com/example/jdbcclient/JdbcClientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbcClient/src/test/java/com/example/gateway/JdbcClientApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/model/Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/model/Authority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,10 +25,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/2FAAuthorizationServer">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/AuthorizationServer">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/GatewayServer">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/MFAAuthorizationServer">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/ResourceServer">
@@ -180,71 +67,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="GatewayServer" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="GatewayServer" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="GatewayServer" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="GatewayServer" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="GatewayServer" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="GatewayServer" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="testRuntimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="jdbcClient" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="jdbcClient" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="jdbcClient" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="oauth2Client" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="oauth2Client" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="oauth2Client" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -278,6 +101,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.TwoFactorAuthExample.executor": "Run",
     "Docker.docker-compose.yml.mysql: Compose Deployment.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "Gradle.GatewayServer [build].executor": "Run",
@@ -314,7 +138,9 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.AuthorizationServerApplication.executor": "Run",
+    "Spring Boot.FAAuthorizationServerApplication.executor": "Run",
     "Spring Boot.GatewayServerApplication.executor": "Run",
     "Spring Boot.JdbcClientApplication.executor": "Run",
     "Spring Boot.Oauth2ClientApplication (1).executor": "Run",
@@ -323,23 +149,29 @@
     "Spring Boot.ResourceServerApplication (2).executor": "Run",
     "Spring Boot.ResourceServerApplication.executor": "Run",
     "Spring Boot.RestClientApplication.executor": "Run",
-    "git-widget-placeholder": "gateway",
+    "Spring Boot.TFAAuthorizationServerApplication.executor": "Run",
+    "git-widget-placeholder": "mfa",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ysyoo/Documents/Github/ha-ving/SpringBootSpringAuthorizationServer/ResourceServer2/src/main/resources/http",
+    "last_opened_file_path": "C:/Users/ysyoo/Documents/Github/ha-ving/SpringBootSpringAuthorizationServer",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.28965518",
     "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
     "settings.editor.splitter.proportion": "0.16064256",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -350,8 +182,8 @@
       <recent name="com.example.oauth2client.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ysyoo\Documents\Github\ha-ving\SpringBootSpringAuthorizationServer\ResourceServer2\src\main\resources\http" />
       <recent name="C:\Users\ysyoo\Documents\Github\ha-ving\SpringBootSpringAuthorizationServer" />
+      <recent name="C:\Users\ysyoo\Documents\Github\ha-ving\SpringBootSpringAuthorizationServer\ResourceServer2\src\main\resources\http" />
       <recent name="C:\Users\ysyoo\Documents\Github\ha-ving\SpringBootSpringAuthorizationServer\RestClient\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -375,7 +207,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ResourceServer2Application">
+  <component name="RunManager" selected="Spring Boot.TFAAuthorizationServerApplication">
+    <configuration name="TwoFactorAuthExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.authorizationserver.mfa.TwoFactorAuthExample" />
+      <module name="2FAAuthorizationServer.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.authorizationserver.mfa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GatewayServer [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -426,9 +271,6 @@
     <configuration name="index | Redirect to ResourceServer" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ResourceServer2/src/main/resources/http/index.http" requestIdentifier="Redirect to ResourceServer" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="index | getAllRoles#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/ResourceServer2/src/main/resources/http/index.http" index="2" requestIdentifier="getAllRoles#2" runType="Run single request">
-      <method v="2" />
-    </configuration>
     <configuration name="AuthorizationServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="AuthorizationServer.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authorizationserver.AuthorizationServerApplication" />
@@ -446,6 +288,13 @@
     <configuration name="JdbcClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="jdbcClient.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.gateway.JdbcClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MFAAuthorizationServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="MFAAuthorizationServer.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authorizationserver.MFAAuthorizationServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -485,6 +334,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TFAAuthorizationServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="2FAAuthorizationServer.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authorizationserver.TFAAuthorizationServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -492,11 +348,13 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.TwoFactorAuthExample" />
       <item itemvalue="Gradle.GatewayServer [build]" />
       <item itemvalue="Gradle.GatewayServer [clean]" />
       <item itemvalue="HTTP Request.index | Gateway ResourceServer" />
-      <item itemvalue="HTTP Request.index | getAllRoles#2" />
       <item itemvalue="HTTP Request.index | Redirect to ResourceServer" />
+      <item itemvalue="Spring Boot.TFAAuthorizationServerApplication" />
+      <item itemvalue="Spring Boot.MFAAuthorizationServerApplication" />
       <item itemvalue="Spring Boot.AuthorizationServerApplication" />
       <item itemvalue="Spring Boot.GatewayServerApplication" />
       <item itemvalue="Spring Boot.JdbcClientApplication" />
@@ -507,11 +365,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TwoFactorAuthExample" />
         <item itemvalue="Gradle.GatewayServer [clean]" />
         <item itemvalue="Gradle.GatewayServer [build]" />
         <item itemvalue="HTTP Request.index | Gateway ResourceServer" />
         <item itemvalue="HTTP Request.index | Redirect to ResourceServer" />
-        <item itemvalue="HTTP Request.index | getAllRoles#2" />
       </list>
     </recent_temporary>
   </component>
@@ -538,7 +396,8 @@
       <workItem from="1731408791173" duration="1171000" />
       <workItem from="1731409987973" duration="9009000" />
       <workItem from="1731419220165" duration="1232000" />
-      <workItem from="1731478295372" duration="38597000" />
+      <workItem from="1731478295372" duration="45570000" />
+      <workItem from="1731597404892" duration="35095000" />
     </task>
     <servers />
   </component>
@@ -548,10 +407,66 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/oauth2Client/src/main/java/com/example/oauth2client/controller/UserController.java</url>
           <line>62</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/controller/LoginController.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/6.3.4/7278b35d2dc7b80c3b0e63a2852140ca52bf6f2/spring-security-web-6.3.4-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java</url>
+          <line>230</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/user/CustomUserDetailsService.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/6.3.4/ea19cb7371d2ccd4727429d44606fa0548586404/spring-security-core-6.3.4-sources.jar!/org/springframework/security/authentication/AnonymousAuthenticationProvider.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/6.3.4/ea19cb7371d2ccd4727429d44606fa0548586404/spring-security-core-6.3.4-sources.jar!/org/springframework/security/authentication/AnonymousAuthenticationProvider.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/6.3.4/ea19cb7371d2ccd4727429d44606fa0548586404/spring-security-core-6.3.4-sources.jar!/org/springframework/security/authentication/AnonymousAuthenticationProvider.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/user/CustomAuthenticationProvider.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/user/CustomUserDetailsService.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/6.3.4/7278b35d2dc7b80c3b0e63a2852140ca52bf6f2/spring-security-web-6.3.4-sources.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/service/AuthenticatorService.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-oauth2-authorization-server/1.3.3/22aabbfd4631cc591e4435361951660ea69e7c2b/spring-security-oauth2-authorization-server-1.3.3-sources.jar!/org/springframework/security/oauth2/server/authorization/JdbcOAuth2AuthorizationService.java</url>
+          <line>169</line>
+          <properties field="UPDATE_AUTHORIZATION_SQL" class="org.springframework.security.oauth2.server.authorization.JdbcOAuth2AuthorizationService" />
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
