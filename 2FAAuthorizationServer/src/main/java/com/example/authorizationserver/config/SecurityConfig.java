@@ -1,5 +1,7 @@
 package com.example.authorizationserver.config;
 
+import com.example.authorizationserver.implicit.CustomCodeGrantAuthenticationConverter;
+import com.example.authorizationserver.implicit.CustomCodeGrantAuthenticationProvider;
 import com.example.authorizationserver.securityHandler.MFAHandler;
 //import com.example.authorizationserver.service.AuthenticationStore;
 import com.example.authorizationserver.user.CustomUserDetailsService;
@@ -15,6 +17,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.oauth2.core.OAuth2Token;
 import org.springframework.security.oauth2.server.authorization.JdbcOAuth2AuthorizationConsentService;
 import org.springframework.security.oauth2.server.authorization.JdbcOAuth2AuthorizationService;
 import org.springframework.security.oauth2.server.authorization.OAuth2AuthorizationConsentService;
@@ -23,6 +26,7 @@ import org.springframework.security.oauth2.server.authorization.client.JdbcRegis
 import org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository;
 import org.springframework.security.oauth2.server.authorization.config.annotation.web.configuration.OAuth2AuthorizationServerConfiguration;
 import org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer;
+import org.springframework.security.oauth2.server.authorization.token.OAuth2TokenGenerator;
 import org.springframework.security.provisioning.JdbcUserDetailsManager;
 import org.springframework.security.provisioning.UserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
@@ -38,12 +42,32 @@ import javax.sql.DataSource;
 @EnableWebSecurity
 public class SecurityConfig {
 
+    private final OAuth2AuthorizationService jdbcOAuth2AuthorizationService;
+    private final PasswordEncoder passwordEncoder;
+    private final OAuth2TokenGenerator<OAuth2Token> delegatingOAuth2TokenGenerator;
+    private final UserDetailsManager jdbcUserDetailsManager;
+
+    public SecurityConfig(OAuth2AuthorizationService jdbcOAuth2AuthorizationService, PasswordEncoder passwordEncoder, OAuth2TokenGenerator<OAuth2Token> delegatingOAuth2TokenGenerator, UserDetailsManager jdbcUserDetailsManager) {
+        this.jdbcOAuth2AuthorizationService = jdbcOAuth2AuthorizationService;
+        this.passwordEncoder = passwordEncoder;
+        this.delegatingOAuth2TokenGenerator = delegatingOAuth2TokenGenerator;
+        this.jdbcUserDetailsManager = jdbcUserDetailsManager;
+    }
+
     @Bean
     @Order(1)
     SecurityFilterChain authorizationServerSecurityFilterChain(HttpSecurity http) throws Exception {
         OAuth2AuthorizationServerConfiguration.applyDefaultSecurity(http);
         http
                 .getConfigurer(OAuth2AuthorizationServerConfigurer.class)
+                .tokenEndpoint(tokenEndpoint -> tokenEndpoint
+                        .accessTokenRequestConverter(new CustomCodeGrantAuthenticationConverter())
+                        .authenticationProvider(new CustomCodeGrantAuthenticationProvider(
+                                jdbcOAuth2AuthorizationService,
+                                delegatingOAuth2TokenGenerator,
+                                jdbcUserDetailsManager,
+                                passwordEncoder))
+                )
                 .authorizationEndpoint(auth -> auth
                         // @see LoginController
                         .consentPage("/oauth2/consent"))
@@ -70,19 +94,19 @@ public class SecurityConfig {
     ) throws Exception {
         http
                 .authorizeHttpRequests((authorize) -> authorize
-                        .requestMatchers("/error", "/login").permitAll()
+                                .requestMatchers("/error", "/login").permitAll()
 //                        .requestMatchers("/authenticator").hasAnyAuthority("ROLE_2FA_REQUIRED")
-                        .requestMatchers("/registration", "/authenticator").hasAuthority("ROLE_MFA_REQUIRED")
-                        .requestMatchers("/security-question").hasAuthority("ROLE_SECURITY_QUESTION_REQUIRED")
-                        .anyRequest().authenticated()
+                                .requestMatchers("/registration", "/authenticator").hasAuthority("ROLE_MFA_REQUIRED")
+                                .requestMatchers("/security-question").hasAuthority("ROLE_SECURITY_QUESTION_REQUIRED")
+                                .anyRequest().authenticated()
                 )
                 // .formLogin(Customizer.withDefaults());
                 // @see LoginController
                 .formLogin(formLogin -> formLogin
-                        .loginPage("/login")
+                                .loginPage("/login")
 //                        .successHandler(new TFAHandler(authenticationStore)) // session saved
-                        .successHandler(new MFAHandler("/authenticator", "ROLE_MFA_REQUIRED"))
-                        .failureHandler(new SimpleUrlAuthenticationFailureHandler("/login?error"))
+                                .successHandler(new MFAHandler("/authenticator", "ROLE_MFA_REQUIRED"))
+                                .failureHandler(new SimpleUrlAuthenticationFailureHandler("/login?error"))
                 );
 
         return http.build();
@@ -99,10 +123,6 @@ public class SecurityConfig {
     AuthenticationSuccessHandler authenticationSuccessHandler() {
         return new SavedRequestAwareAuthenticationSuccessHandler();
     }
-
-    @Bean
-    UserDetailsManager jdbcUserDetailsManager(DataSource dataSource) {
-        return new JdbcUserDetailsManager(dataSource);
-    }
 }
+
 

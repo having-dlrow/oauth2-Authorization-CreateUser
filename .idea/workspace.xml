@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bebcf9d6-a3ae-4c5b-b518-77d4948e6d62" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/implicit/CustomCodeGrantAuthenticationConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/implicit/CustomCodeGrantAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/implicit/CustomCodeGrantAuthenticationToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/41593961-0a08-4152-baea-05fdddd94faf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/41593961-0a08-4152-baea-05fdddd94faf.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/config/JdbcRegisteredClientRepositoryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/config/JdbcRegisteredClientRepositoryConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/config/UsersConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/config/UsersConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/securityHandler/MFAHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/securityHandler/MFAHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/user/CustomAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/user/CustomAuthenticationProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/user/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/user/CustomUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/user/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/user/CustomUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/securityHandler/MFAAuthentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/securityHandler/MFAAuthentication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/2FAAuthorizationServer/src/main/resources/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -397,7 +399,7 @@
       <workItem from="1731409987973" duration="9009000" />
       <workItem from="1731419220165" duration="1232000" />
       <workItem from="1731478295372" duration="45570000" />
-      <workItem from="1731597404892" duration="35095000" />
+      <workItem from="1731597404892" duration="47304000" />
     </task>
     <servers />
   </component>
@@ -461,6 +463,16 @@
           <url>file://$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/service/AuthenticatorService.java</url>
           <line>29</line>
           <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-oauth2-authorization-server/1.3.3/22aabbfd4631cc591e4435361951660ea69e7c2b/spring-security-oauth2-authorization-server-1.3.3-sources.jar!/org/springframework/security/oauth2/server/authorization/web/OAuth2TokenEndpointFilter.java</url>
+          <line>175</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/2FAAuthorizationServer/src/main/java/com/example/authorizationserver/implicit/CustomCodeGrantAuthenticationProvider.java</url>
+          <line>169</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-oauth2-authorization-server/1.3.3/22aabbfd4631cc591e4435361951660ea69e7c2b/spring-security-oauth2-authorization-server-1.3.3-sources.jar!/org/springframework/security/oauth2/server/authorization/JdbcOAuth2AuthorizationService.java</url>

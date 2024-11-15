@@ -13,9 +13,12 @@ import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.keygen.BytesKeyGenerator;
 import org.springframework.security.crypto.keygen.KeyGenerators;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.provisioning.JdbcUserDetailsManager;
+import org.springframework.security.provisioning.UserDetailsManager;
 
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
+import javax.sql.DataSource;
 import java.util.Base64;
 
 @Configuration
@@ -37,6 +40,11 @@ public class UsersConfig {
     @Bean
     CustomUserDetailsService customUserDetailsManager(JdbcTemplate jdbcTemplate, BytesEncryptor bytesEncryptor) {
         return new CustomUserDetailsService(jdbcTemplate, bytesEncryptor);
+    }
+
+    @Bean
+    UserDetailsManager jdbcUserDetailsManager(DataSource dataSource) {
+        return new JdbcUserDetailsManager(dataSource);
     }
 
     @Bean

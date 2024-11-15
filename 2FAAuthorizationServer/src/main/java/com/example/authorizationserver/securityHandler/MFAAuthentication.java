@@ -4,10 +4,12 @@ import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
+import org.springframework.web.context.annotation.SessionScope;
 
 import java.io.Serial;
 import java.util.List;
 
+@SessionScope
 public class MFAAuthentication extends AnonymousAuthenticationToken {
 
     private static final long serialVersionUID = 1L;

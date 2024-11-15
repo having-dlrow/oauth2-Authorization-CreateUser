@@ -224,3 +224,8 @@ public record User(
   . . .
 ) implements UserDetails {
 ```
+
+-[] org.springframework.dao.DuplicateKeyException: PreparedStatementCallback; SQL [INSERT INTO SPRING_SESSION_ATTRIBUTES (SESSION_PRIMARY_ID, ATTRIBUTE_NAME, ATTRIBUTE_BYTES)
+VALUES (?, ?, ?)
+]; Duplicate entry '6e633986-dbad-41b6-bb8d-6bc69766ee60-SPRING_SECURITY_CONTEXT' for key 'SPRING_SESSION_ATTRIBUTES.PRIMARY'
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '6e633986-dbad-41b6-bb8d-6bc69766ee60-SPRING_SECURITY_CONTEXT' for key 'SPRING_SESSION_ATTRIBUTES.PRIMARY'
